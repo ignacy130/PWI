@@ -1,0 +1,130 @@
+    * {
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Lato';
+            color: #656590;
+        }
+        
+        .full-row{
+            width: 100%;
+            position: fixed;
+        }
+        
+        #header {
+            float: left;
+        }
+        
+        #arrows a {
+            text-decoration: none;
+            font-size: 3em;
+            padding: 0.2em;
+            font-weight: lighter;
+            position: fixed;
+            top: 40%;
+        }
+        
+        #arrows a:hover {
+            background: #656590;
+            color: #fff;
+        }
+        
+        #right {
+            right: 0px;
+        }
+        
+        #right:active {
+            right: -1px;
+        }
+        
+        #left {
+            left: 0px;
+        }
+        
+        #left:active {
+            left: -1px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .invert {
+            background: #656590;
+            color: #ccc;
+        }
+        
+        #header a {
+            color: inherit;
+            display: inline-block;
+            padding: 1em;
+            text-decoration: none;
+            border-bottom: 5px solid transparent;
+        }
+        
+        #header a:hover {
+            color: #fff;
+            border-bottom: 5px solid white;
+        }
+        
+        #header a:active {
+            border-bottom: 5px solid white;
+            position: relative;
+            top: 1px;
+        }
+        
+        .container {
+            margin: 0 auto;
+            width: 80%;
+            clear: both;
+        }
+        
+        .text {
+            line-height: 1.4em;
+            margin: 0 auto;
+            clear: both;
+            width: 80%;
+        }
+        
+        .separator::after {
+            text-align: center;
+            width: 100%;
+            float: left;
+            content: "~";
+            font-size: 2em;
+            padding: 0.5em 0;
+        }
+        
+        .padded {
+            padding: 10px;
+        }
+        
+        #content {
+            padding-top: 3em;
+        }
+        
+        h2 {
+            font-size: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+            padding: 0.5em;
+            border-bottom: 1px solid;
+        }
+        
+.pubDate{
+    text-align: center;
+    width: 100%;
+    float: left;
+    display: block;
+    padding: 0.5em 0;
+}
+
+        #footer {
+            position: fixed;
+            bottom: 0;
+            padding: 0.5em;
+        }
+    
