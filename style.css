@@ -139,9 +139,7 @@
     margin: 0 auto;
 }
 
-#sourceText{
-    height: 100px;
-}
+
 
 h3{
     font-size: 1.5em;
@@ -151,6 +149,10 @@ h3{
 h4{
     font-size: 1.2em;
     padding: 0.3em;
+}
+
+#sourceText{
+    height: 100px;
 }
 
 #arena{
