@@ -1,0 +1,75 @@
+\hypertarget{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service}{}\section{Bibabook.\+Implementation.\+Email\+Service.\+Email\+Service Class Reference}
+\label{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service}\index{Bibabook.\+Implementation.\+Email\+Service.\+Email\+Service@{Bibabook.\+Implementation.\+Email\+Service.\+Email\+Service}}
+
+
+Inherits \hyperlink{interface_contract_1_1_i_email_service}{Contract.\+I\+Email\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_contract_1_1_i_email}{I\+Email} \hyperlink{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_a11c5b062ce9466198e8e1867d98132f2}{Create\+Email} (string receiver\+Email\+Address, string subject, string message)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_a50ff5fcda3821c245f32052c2793f713}{Send\+Email} (\hyperlink{interface_contract_1_1_i_email}{I\+Email} email)
+\begin{DoxyCompactList}\small\item\em Wysyła e-\/mail z konta systemu. \end{DoxyCompactList}\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_aa00b042fe958ce792c99c3c5101b24a3}{Send\+Email} (I\+Collection$<$ string $>$ receivers\+Email\+Addresses, string subject, string message)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+System.\+Net.\+Mail.\+Smtp\+Client \hyperlink{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_a8bcc8888961a94b44a79bedaa82fbe63}{Client}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_a11c5b062ce9466198e8e1867d98132f2}{}\index{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service@{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service}!Create\+Email@{Create\+Email}}
+\index{Create\+Email@{Create\+Email}!Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service@{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service}}
+\subsubsection[{Create\+Email}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Email} Bibabook.\+Implementation.\+Email\+Service.\+Email\+Service.\+Create\+Email (
+\begin{DoxyParamCaption}
+\item[{string}]{receiver\+Email\+Address, }
+\item[{string}]{subject, }
+\item[{string}]{message}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_a11c5b062ce9466198e8e1867d98132f2}
+\hypertarget{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_a50ff5fcda3821c245f32052c2793f713}{}\index{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service@{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service}!Send\+Email@{Send\+Email}}
+\index{Send\+Email@{Send\+Email}!Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service@{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service}}
+\subsubsection[{Send\+Email}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+Email\+Service.\+Email\+Service.\+Send\+Email (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Email}}]{email}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_a50ff5fcda3821c245f32052c2793f713}
+
+
+Wysyła e-\/mail z konta systemu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Wysyłany e-\/mail\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_contract_1_1_i_email_service_aa4cd47c61363f21b7d8011779439564e}{Contract.\+I\+Email\+Service}.
+
+\hypertarget{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_aa00b042fe958ce792c99c3c5101b24a3}{}\index{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service@{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service}!Send\+Email@{Send\+Email}}
+\index{Send\+Email@{Send\+Email}!Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service@{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service}}
+\subsubsection[{Send\+Email}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+Email\+Service.\+Email\+Service.\+Send\+Email (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ string $>$}]{receivers\+Email\+Addresses, }
+\item[{string}]{subject, }
+\item[{string}]{message}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_aa00b042fe958ce792c99c3c5101b24a3}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_a8bcc8888961a94b44a79bedaa82fbe63}{}\index{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service@{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service}!Client@{Client}}
+\index{Client@{Client}!Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service@{Bibabook\+::\+Implementation\+::\+Email\+Service\+::\+Email\+Service}}
+\subsubsection[{Client}]{\setlength{\rightskip}{0pt plus 5cm}System.\+Net.\+Mail.\+Smtp\+Client Bibabook.\+Implementation.\+Email\+Service.\+Email\+Service.\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_a8bcc8888961a94b44a79bedaa82fbe63}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Implementation/\+Email\+Service/\hyperlink{_email_service_8cs}{Email\+Service.\+cs}\end{DoxyCompactItemize}

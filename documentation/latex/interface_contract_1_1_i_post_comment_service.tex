@@ -1,0 +1,101 @@
+\hypertarget{interface_contract_1_1_i_post_comment_service}{}\section{Contract.\+I\+Post\+Comment\+Service Interface Reference}
+\label{interface_contract_1_1_i_post_comment_service}\index{Contract.\+I\+Post\+Comment\+Service@{Contract.\+I\+Post\+Comment\+Service}}
+
+
+Zapewnia metody do zarządzania komentarzami.  
+
+
+
+
+Inherited by \hyperlink{class_bibabook_1_1_implementation_1_1_post_comment_1_1_post_comment_service}{Bibabook.\+Implementation.\+Post\+Comment.\+Post\+Comment\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{interface_contract_1_1_i_post_comment_service_a4f42588878a782bbd89fc5b57b1c48ae}{Create} (\hyperlink{interface_contract_1_1_i_post_comment}{I\+Post\+Comment} post\+Comment)
+\begin{DoxyCompactList}\small\item\em Dodaje komentarz do bazy. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_post_comment_service_a574a716ac04bdab96696dbb60e017d65}{Edit} (\hyperlink{interface_contract_1_1_i_post_comment}{I\+Post\+Comment} post\+Comment, String new\+Content)
+\begin{DoxyCompactList}\small\item\em Zmienia treść komentarza. Opcja ta powinna być dostepna wyłącznie dla autora komentarza oraz moderatorów. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_post_comment_service_a82dec9117da1559987ed270a2d0b5b81}{Delete} (\hyperlink{interface_contract_1_1_i_post_comment}{I\+Post\+Comment} post\+Comment)
+\begin{DoxyCompactList}\small\item\em Trwale kasuje komentarz z bazy danych. Opcja ta powinna być dostepna wyłącznie dla autora, właściciela wydarzenia oraz moderatorów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Zapewnia metody do zarządzania komentarzami. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_contract_1_1_i_post_comment_service_a4f42588878a782bbd89fc5b57b1c48ae}{}\index{Contract\+::\+I\+Post\+Comment\+Service@{Contract\+::\+I\+Post\+Comment\+Service}!Create@{Create}}
+\index{Create@{Create}!Contract\+::\+I\+Post\+Comment\+Service@{Contract\+::\+I\+Post\+Comment\+Service}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Post\+Comment\+Service.\+Create (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Post\+Comment}}]{post\+Comment}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_post_comment_service_a4f42588878a782bbd89fc5b57b1c48ae}
+
+
+Dodaje komentarz do bazy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post} & Dodawany komentarz\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_post_comment_1_1_post_comment_service_a69d9cb1bd34cc3470638e13307962227}{Bibabook.\+Implementation.\+Post\+Comment.\+Post\+Comment\+Service}.
+
+\hypertarget{interface_contract_1_1_i_post_comment_service_a82dec9117da1559987ed270a2d0b5b81}{}\index{Contract\+::\+I\+Post\+Comment\+Service@{Contract\+::\+I\+Post\+Comment\+Service}!Delete@{Delete}}
+\index{Delete@{Delete}!Contract\+::\+I\+Post\+Comment\+Service@{Contract\+::\+I\+Post\+Comment\+Service}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Post\+Comment\+Service.\+Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Post\+Comment}}]{post\+Comment}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_post_comment_service_a82dec9117da1559987ed270a2d0b5b81}
+
+
+Trwale kasuje komentarz z bazy danych. Opcja ta powinna być dostepna wyłącznie dla autora, właściciela wydarzenia oraz moderatorów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em post\+Comment} & Instancja komentarza do skasowania\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_post_comment_1_1_post_comment_service_a00809b1cd328b7a733e48d3df9cebd30}{Bibabook.\+Implementation.\+Post\+Comment.\+Post\+Comment\+Service}.
+
+\hypertarget{interface_contract_1_1_i_post_comment_service_a574a716ac04bdab96696dbb60e017d65}{}\index{Contract\+::\+I\+Post\+Comment\+Service@{Contract\+::\+I\+Post\+Comment\+Service}!Edit@{Edit}}
+\index{Edit@{Edit}!Contract\+::\+I\+Post\+Comment\+Service@{Contract\+::\+I\+Post\+Comment\+Service}}
+\subsubsection[{Edit}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Post\+Comment\+Service.\+Edit (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Post\+Comment}}]{post\+Comment, }
+\item[{String}]{new\+Content}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_post_comment_service_a574a716ac04bdab96696dbb60e017d65}
+
+
+Zmienia treść komentarza. Opcja ta powinna być dostepna wyłącznie dla autora komentarza oraz moderatorów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em post\+Comment} & Komentarz\\
+\hline
+{\em new\+Content} & Nowa treść komentarza\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Contract/\+Post\+Comment/\hyperlink{_i_post_comment_service_8cs}{I\+Post\+Comment\+Service.\+cs}\end{DoxyCompactItemize}

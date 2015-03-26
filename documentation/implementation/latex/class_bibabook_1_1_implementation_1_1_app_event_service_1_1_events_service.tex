@@ -1,0 +1,136 @@
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service}{}\section{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service Class Reference}
+\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service}\index{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service@{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}}
+
+
+Odpowiedzialny za obsluge (dodawanie, edycje, dodawanie uczestnikow) wydarzen  
+
+
+
+
+Inherits I\+App\+Event\+Service.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a3c3a0b4555e239f36e49615e3ca056cd}{Create} (I\+App\+Event app\+Event)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ae9d6dffe48aa929b26bac38dfb0c459a}{Cancel} (I\+App\+Event app\+Event)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a18493d649b2ea4c86428968f62eebcf5}{Delete} (I\+App\+Event app\+Event)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a03db2f4f2c7892f9a721c8fd58b86f45}{Invite\+User} (I\+App\+Event app\+Event, I\+App\+User sender, I\+App\+User recipient)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ab44fc0ac1b5abc5c1544943ebab32c80}{Invite\+User} (I\+App\+User app\+Event, I\+App\+User sender, I\+Collection$<$ I\+App\+User $>$ recipients)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a1eb61bcaade404a395c9b79ac9fa17e4}{Enroll\+User} (I\+App\+User app\+Event, I\+App\+User app\+User)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a640cf9c1a0dee37f7b320eded34d129d}{Remove\+User} (I\+App\+Event app\+Event, I\+App\+User app\+User)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a425edae1da002dcceeebd6bf65c316b0}{Remove\+User} (I\+App\+Event app\+Event, I\+Collection$<$ I\+App\+User $>$ app\+Users)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ab23587341dc178c31d1270ea2dc70a65}{Forbid\+User} (I\+App\+Event app\+Event, I\+App\+User app\+User)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ae1ace711340dc8ddda7a94a8740d3bda}{Allow\+User} (I\+App\+Event app\+Event, I\+App\+User app\+User)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a8c3fe9b4bbbc6185ef233b43f568a750}{Add\+Event\+Post} (I\+App\+Event app\+Event, I\+Event\+Post event\+Post)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Odpowiedzialny za obsluge (dodawanie, edycje, dodawanie uczestnikow) wydarzen 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a8c3fe9b4bbbc6185ef233b43f568a750}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Add\+Event\+Post@{Add\+Event\+Post}}
+\index{Add\+Event\+Post@{Add\+Event\+Post}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Add\+Event\+Post}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Add\+Event\+Post (
+\begin{DoxyParamCaption}
+\item[{I\+App\+Event}]{app\+Event, }
+\item[{I\+Event\+Post}]{event\+Post}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a8c3fe9b4bbbc6185ef233b43f568a750}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ae1ace711340dc8ddda7a94a8740d3bda}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Allow\+User@{Allow\+User}}
+\index{Allow\+User@{Allow\+User}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Allow\+User}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Allow\+User (
+\begin{DoxyParamCaption}
+\item[{I\+App\+Event}]{app\+Event, }
+\item[{I\+App\+User}]{app\+User}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ae1ace711340dc8ddda7a94a8740d3bda}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ae9d6dffe48aa929b26bac38dfb0c459a}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Cancel@{Cancel}}
+\index{Cancel@{Cancel}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Cancel}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Cancel (
+\begin{DoxyParamCaption}
+\item[{I\+App\+Event}]{app\+Event}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ae9d6dffe48aa929b26bac38dfb0c459a}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a3c3a0b4555e239f36e49615e3ca056cd}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Create@{Create}}
+\index{Create@{Create}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Create (
+\begin{DoxyParamCaption}
+\item[{I\+App\+Event}]{app\+Event}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a3c3a0b4555e239f36e49615e3ca056cd}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a18493d649b2ea4c86428968f62eebcf5}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Delete@{Delete}}
+\index{Delete@{Delete}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Delete (
+\begin{DoxyParamCaption}
+\item[{I\+App\+Event}]{app\+Event}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a18493d649b2ea4c86428968f62eebcf5}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a1eb61bcaade404a395c9b79ac9fa17e4}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Enroll\+User@{Enroll\+User}}
+\index{Enroll\+User@{Enroll\+User}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Enroll\+User}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Enroll\+User (
+\begin{DoxyParamCaption}
+\item[{I\+App\+User}]{app\+Event, }
+\item[{I\+App\+User}]{app\+User}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a1eb61bcaade404a395c9b79ac9fa17e4}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ab23587341dc178c31d1270ea2dc70a65}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Forbid\+User@{Forbid\+User}}
+\index{Forbid\+User@{Forbid\+User}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Forbid\+User}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Forbid\+User (
+\begin{DoxyParamCaption}
+\item[{I\+App\+Event}]{app\+Event, }
+\item[{I\+App\+User}]{app\+User}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ab23587341dc178c31d1270ea2dc70a65}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a03db2f4f2c7892f9a721c8fd58b86f45}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Invite\+User@{Invite\+User}}
+\index{Invite\+User@{Invite\+User}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Invite\+User}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Invite\+User (
+\begin{DoxyParamCaption}
+\item[{I\+App\+Event}]{app\+Event, }
+\item[{I\+App\+User}]{sender, }
+\item[{I\+App\+User}]{recipient}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a03db2f4f2c7892f9a721c8fd58b86f45}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ab44fc0ac1b5abc5c1544943ebab32c80}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Invite\+User@{Invite\+User}}
+\index{Invite\+User@{Invite\+User}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Invite\+User}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Invite\+User (
+\begin{DoxyParamCaption}
+\item[{I\+App\+User}]{app\+Event, }
+\item[{I\+App\+User}]{sender, }
+\item[{I\+Collection$<$ I\+App\+User $>$}]{recipients}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ab44fc0ac1b5abc5c1544943ebab32c80}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a640cf9c1a0dee37f7b320eded34d129d}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Remove\+User@{Remove\+User}}
+\index{Remove\+User@{Remove\+User}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Remove\+User}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Remove\+User (
+\begin{DoxyParamCaption}
+\item[{I\+App\+Event}]{app\+Event, }
+\item[{I\+App\+User}]{app\+User}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a640cf9c1a0dee37f7b320eded34d129d}
+\hypertarget{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a425edae1da002dcceeebd6bf65c316b0}{}\index{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}!Remove\+User@{Remove\+User}}
+\index{Remove\+User@{Remove\+User}!Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service@{Bibabook\+::\+Implementation\+::\+App\+Event\+Service\+::\+Events\+Service}}
+\subsubsection[{Remove\+User}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service.\+Remove\+User (
+\begin{DoxyParamCaption}
+\item[{I\+App\+Event}]{app\+Event, }
+\item[{I\+Collection$<$ I\+App\+User $>$}]{app\+Users}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a425edae1da002dcceeebd6bf65c316b0}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Implementation/\+App\+Event\+Service/\hyperlink{_events_service_8cs}{Events\+Service.\+cs}\end{DoxyCompactItemize}

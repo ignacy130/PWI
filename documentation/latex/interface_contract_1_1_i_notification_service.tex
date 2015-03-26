@@ -1,0 +1,100 @@
+\hypertarget{interface_contract_1_1_i_notification_service}{}\section{Contract.\+I\+Notification\+Service Interface Reference}
+\label{interface_contract_1_1_i_notification_service}\index{Contract.\+I\+Notification\+Service@{Contract.\+I\+Notification\+Service}}
+
+
+Zapewnia metody związane z obsługą powiadomień.  
+
+
+
+
+Inherited by \hyperlink{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service}{Bibabook.\+Implementation.\+Notification\+Service.\+Notification\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{interface_contract_1_1_i_notification_service_acfc2b40ce5ee992f1525f85938780209}{Create} (\hyperlink{interface_contract_1_1_i_notification}{I\+Notification} notification)
+\begin{DoxyCompactList}\small\item\em Dodaje powiadomienie do bazy. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_notification_service_aea44f9b679e27dc6e5b6deb0bed06d89}{Set\+Notification\+Status} (\hyperlink{interface_contract_1_1_i_notification}{I\+Notification} notification, \hyperlink{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26}{Notification\+Status} notification\+Status)
+\begin{DoxyCompactList}\small\item\em Ustala stan powiadomienia. \end{DoxyCompactList}\item 
+I\+Collection$<$ \hyperlink{interface_contract_1_1_i_notification}{I\+Notification} $>$ \hyperlink{interface_contract_1_1_i_notification_service_a8686197b365f477af9a0c8f931017360}{Get\+User\+Notifications} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User, I\+Collection$<$ \hyperlink{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26}{Notification\+Status} $>$ accepted\+Statuses=null)
+\begin{DoxyCompactList}\small\item\em Wybiera powiadomienia użytkownika o jednym z zadanych statusów. Jeśli nie określono stanów, wybiera wszystkie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Zapewnia metody związane z obsługą powiadomień. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_contract_1_1_i_notification_service_acfc2b40ce5ee992f1525f85938780209}{}\index{Contract\+::\+I\+Notification\+Service@{Contract\+::\+I\+Notification\+Service}!Create@{Create}}
+\index{Create@{Create}!Contract\+::\+I\+Notification\+Service@{Contract\+::\+I\+Notification\+Service}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Notification\+Service.\+Create (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Notification}}]{notification}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_notification_service_acfc2b40ce5ee992f1525f85938780209}
+
+
+Dodaje powiadomienie do bazy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post} & Dodawane powiadomienie\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service_aa7b8c602d5a131a45750533b9bcf2fe0}{Bibabook.\+Implementation.\+Notification\+Service.\+Notification\+Service}.
+
+\hypertarget{interface_contract_1_1_i_notification_service_a8686197b365f477af9a0c8f931017360}{}\index{Contract\+::\+I\+Notification\+Service@{Contract\+::\+I\+Notification\+Service}!Get\+User\+Notifications@{Get\+User\+Notifications}}
+\index{Get\+User\+Notifications@{Get\+User\+Notifications}!Contract\+::\+I\+Notification\+Service@{Contract\+::\+I\+Notification\+Service}}
+\subsubsection[{Get\+User\+Notifications}]{\setlength{\rightskip}{0pt plus 5cm}I\+Collection$<${\bf I\+Notification}$>$ Contract.\+I\+Notification\+Service.\+Get\+User\+Notifications (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+User, }
+\item[{I\+Collection$<$ {\bf Notification\+Status} $>$}]{accepted\+Statuses = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_notification_service_a8686197b365f477af9a0c8f931017360}
+
+
+Wybiera powiadomienia użytkownika o jednym z zadanych statusów. Jeśli nie określono stanów, wybiera wszystkie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+User} & Użytkownik\\
+\hline
+{\em accepted\+Statuses} & Kolekcja dopuszczlnych stanów powiadomienia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Kolekcja powiadomień
+\end{DoxyReturn}
+\hypertarget{interface_contract_1_1_i_notification_service_aea44f9b679e27dc6e5b6deb0bed06d89}{}\index{Contract\+::\+I\+Notification\+Service@{Contract\+::\+I\+Notification\+Service}!Set\+Notification\+Status@{Set\+Notification\+Status}}
+\index{Set\+Notification\+Status@{Set\+Notification\+Status}!Contract\+::\+I\+Notification\+Service@{Contract\+::\+I\+Notification\+Service}}
+\subsubsection[{Set\+Notification\+Status}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Notification\+Service.\+Set\+Notification\+Status (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Notification}}]{notification, }
+\item[{{\bf Notification\+Status}}]{notification\+Status}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_notification_service_aea44f9b679e27dc6e5b6deb0bed06d89}
+
+
+Ustala stan powiadomienia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification} & Powiadomienie\\
+\hline
+{\em notification\+Status} & Nowy stan powiadomienia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Contract/\+Notification\+Service/\hyperlink{_i_notification_service_8cs}{I\+Notification\+Service.\+cs}\end{DoxyCompactItemize}

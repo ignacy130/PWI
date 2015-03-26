@@ -1,0 +1,158 @@
+\hypertarget{interface_contract_1_1_i_app_user_service}{}\section{Contract.\+I\+App\+User\+Service Interface Reference}
+\label{interface_contract_1_1_i_app_user_service}\index{Contract.\+I\+App\+User\+Service@{Contract.\+I\+App\+User\+Service}}
+
+
+Zawiera metody związane z obsługą kont użytkowników.  
+
+
+
+
+Inherited by \hyperlink{class_bibabook_1_1_implementation_1_1_app_user_service_1_1_users_service}{Bibabook.\+Implementation.\+App\+User\+Service.\+Users\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_service_a724a95f1e44e8a7b37fe6ead5261361e}{Create\+Account} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} user)
+\begin{DoxyCompactList}\small\item\em Dodaje użytkownika do bazy danych. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_service_af86ad71018d6fe4e6a9f3ad9c941dad1}{Verify\+Account} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User)
+\begin{DoxyCompactList}\small\item\em Ustawia konto jako aktywne w momencie jego aktywacji podczas rejestracji. Użytkownik aktywny będzie miał dostęp do odpowiednich funkcji serwisu. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_service_ac9750114ef81e7efc0fa6251bfa84bc7}{Close\+Account} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User)
+\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_service_a8304095666e73cbf8c8d7d92e96d235c}{Ban\+User} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User, Date\+Time expiration\+Date)
+\begin{DoxyCompactList}\small\item\em Użytkownik stanie się nieaktywny do podanego terminu. Nie będzie mógł przez ten czas korzystać z funkcji serwisu. Funkcja ta powinna być dostępna tylko dla moderatorów. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_service_aaf9bccb0516b09cf063fd9bd6d2255b8}{Change\+User\+Role} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User, String role\+Name)
+\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_service_a649b278ad292ccc1ab705a6afa55d884}{Change\+User\+Email} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User, String new\+Email)
+\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_service_a015b20a2d16c824079dc5000b68b2d0b}{Change\+User\+Password} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User, String new\+Password)
+\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_service_a16e1c4874cb93967c50d17893ae8c30c}{Change\+User\+Avatar} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User, String new\+Avatar\+Path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Zawiera metody związane z obsługą kont użytkowników. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_contract_1_1_i_app_user_service_a8304095666e73cbf8c8d7d92e96d235c}{}\index{Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}!Ban\+User@{Ban\+User}}
+\index{Ban\+User@{Ban\+User}!Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}}
+\subsubsection[{Ban\+User}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Service.\+Ban\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+User, }
+\item[{Date\+Time}]{expiration\+Date}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_service_a8304095666e73cbf8c8d7d92e96d235c}
+
+
+Użytkownik stanie się nieaktywny do podanego terminu. Nie będzie mógł przez ten czas korzystać z funkcji serwisu. Funkcja ta powinna być dostępna tylko dla moderatorów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+User} & Instancja użytkownika\\
+\hline
+{\em expiration\+Date} & Czas wygaśnięcia blokady\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w p.\+p.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_user_service_1_1_users_service_a65c9624f8d564a1b1f306b38e8f9ad3d}{Bibabook.\+Implementation.\+App\+User\+Service.\+Users\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_user_service_a16e1c4874cb93967c50d17893ae8c30c}{}\index{Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}!Change\+User\+Avatar@{Change\+User\+Avatar}}
+\index{Change\+User\+Avatar@{Change\+User\+Avatar}!Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}}
+\subsubsection[{Change\+User\+Avatar}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Service.\+Change\+User\+Avatar (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+User, }
+\item[{String}]{new\+Avatar\+Path}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_service_a16e1c4874cb93967c50d17893ae8c30c}
+\hypertarget{interface_contract_1_1_i_app_user_service_a649b278ad292ccc1ab705a6afa55d884}{}\index{Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}!Change\+User\+Email@{Change\+User\+Email}}
+\index{Change\+User\+Email@{Change\+User\+Email}!Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}}
+\subsubsection[{Change\+User\+Email}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Service.\+Change\+User\+Email (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+User, }
+\item[{String}]{new\+Email}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_service_a649b278ad292ccc1ab705a6afa55d884}
+\hypertarget{interface_contract_1_1_i_app_user_service_a015b20a2d16c824079dc5000b68b2d0b}{}\index{Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}!Change\+User\+Password@{Change\+User\+Password}}
+\index{Change\+User\+Password@{Change\+User\+Password}!Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}}
+\subsubsection[{Change\+User\+Password}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Service.\+Change\+User\+Password (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+User, }
+\item[{String}]{new\+Password}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_service_a015b20a2d16c824079dc5000b68b2d0b}
+\hypertarget{interface_contract_1_1_i_app_user_service_aaf9bccb0516b09cf063fd9bd6d2255b8}{}\index{Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}!Change\+User\+Role@{Change\+User\+Role}}
+\index{Change\+User\+Role@{Change\+User\+Role}!Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}}
+\subsubsection[{Change\+User\+Role}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Service.\+Change\+User\+Role (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+User, }
+\item[{String}]{role\+Name}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_service_aaf9bccb0516b09cf063fd9bd6d2255b8}
+\hypertarget{interface_contract_1_1_i_app_user_service_ac9750114ef81e7efc0fa6251bfa84bc7}{}\index{Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}!Close\+Account@{Close\+Account}}
+\index{Close\+Account@{Close\+Account}!Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}}
+\subsubsection[{Close\+Account}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Service.\+Close\+Account (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+User}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_service_ac9750114ef81e7efc0fa6251bfa84bc7}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_user_service_1_1_users_service_a2467be014a736abc21385626434d390b}{Bibabook.\+Implementation.\+App\+User\+Service.\+Users\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_user_service_a724a95f1e44e8a7b37fe6ead5261361e}{}\index{Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}!Create\+Account@{Create\+Account}}
+\index{Create\+Account@{Create\+Account}!Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}}
+\subsubsection[{Create\+Account}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Service.\+Create\+Account (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{user}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_service_a724a95f1e44e8a7b37fe6ead5261361e}
+
+
+Dodaje użytkownika do bazy danych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & Dodawany użytkownik\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_user_service_1_1_users_service_a09099199f03613616cbb6b9881e2d613}{Bibabook.\+Implementation.\+App\+User\+Service.\+Users\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_user_service_af86ad71018d6fe4e6a9f3ad9c941dad1}{}\index{Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}!Verify\+Account@{Verify\+Account}}
+\index{Verify\+Account@{Verify\+Account}!Contract\+::\+I\+App\+User\+Service@{Contract\+::\+I\+App\+User\+Service}}
+\subsubsection[{Verify\+Account}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Service.\+Verify\+Account (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+User}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_service_af86ad71018d6fe4e6a9f3ad9c941dad1}
+
+
+Ustawia konto jako aktywne w momencie jego aktywacji podczas rejestracji. Użytkownik aktywny będzie miał dostęp do odpowiednich funkcji serwisu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+User} & Instancja użytkownika\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w p.\+p.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_user_service_1_1_users_service_abfc1fda74aa855425d06128ff4c57d0c}{Bibabook.\+Implementation.\+App\+User\+Service.\+Users\+Service}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Contract/\+App\+User\+Service/\hyperlink{_i_app_user_service_8cs}{I\+App\+User\+Service.\+cs}\end{DoxyCompactItemize}

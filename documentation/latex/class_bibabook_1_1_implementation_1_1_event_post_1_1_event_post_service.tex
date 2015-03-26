@@ -1,0 +1,105 @@
+\hypertarget{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service}{}\section{Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service Class Reference}
+\label{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service}\index{Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service@{Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service}}
+
+
+Inherits \hyperlink{interface_contract_1_1_i_event_post_service}{Contract.\+I\+Event\+Post\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_ad2657b93d677033ccdbf2957281e0ea1}{Create} (\hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} event\+Post)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy post do bazy. \end{DoxyCompactList}\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_afd957411d2f00bfc798f3647e17d878c}{Edit} (\hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} event\+Post, string new\+Content)
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_afcfcf99aa0a6a13868479ba42526a534}{Add\+Post\+Comment} (\hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} event\+Post, \hyperlink{interface_contract_1_1_i_post_comment}{I\+Post\+Comment} post\+Comment)
+\begin{DoxyCompactList}\small\item\em Przypisuje komentarz do posta. \end{DoxyCompactList}\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_a540d3592cb666ebc10f1f9a36a80269c}{Delete} (\hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} event\+Post)
+\begin{DoxyCompactList}\small\item\em Trwale kasuje post z bazy danych. Wszystkie przypisane do niego komentarze także powinny zostać skasowane. Opcja ta powinna być dostepna wyłącznie dla autora posta, właściciela wydarzenia oraz moderatorów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_afcfcf99aa0a6a13868479ba42526a534}{}\index{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service@{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service}!Add\+Post\+Comment@{Add\+Post\+Comment}}
+\index{Add\+Post\+Comment@{Add\+Post\+Comment}!Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service@{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service}}
+\subsubsection[{Add\+Post\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service.\+Add\+Post\+Comment (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Event\+Post}}]{event\+Post, }
+\item[{{\bf I\+Post\+Comment}}]{post\+Comment}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_afcfcf99aa0a6a13868479ba42526a534}
+
+
+Przypisuje komentarz do posta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post} & Instancja posta\\
+\hline
+{\em post\+Comment} & Instancja komentarza\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_contract_1_1_i_event_post_service_a24e60ba2af24abfe6d50df5f893500ea}{Contract.\+I\+Event\+Post\+Service}.
+
+\hypertarget{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_ad2657b93d677033ccdbf2957281e0ea1}{}\index{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service@{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service}!Create@{Create}}
+\index{Create@{Create}!Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service@{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service.\+Create (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Event\+Post}}]{event\+Post}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_ad2657b93d677033ccdbf2957281e0ea1}
+
+
+Dodaje nowy post do bazy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post} & Dodawany post\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko prz ebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_contract_1_1_i_event_post_service_a11a32da680394e2cf58b30a792bc218b}{Contract.\+I\+Event\+Post\+Service}.
+
+\hypertarget{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_a540d3592cb666ebc10f1f9a36a80269c}{}\index{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service@{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service}!Delete@{Delete}}
+\index{Delete@{Delete}!Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service@{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service.\+Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Event\+Post}}]{event\+Post}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_a540d3592cb666ebc10f1f9a36a80269c}
+
+
+Trwale kasuje post z bazy danych. Wszystkie przypisane do niego komentarze także powinny zostać skasowane. Opcja ta powinna być dostepna wyłącznie dla autora posta, właściciela wydarzenia oraz moderatorów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post} & Instancja posta do skasowania\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_contract_1_1_i_event_post_service_a89a1e0b21e6123c0e927a92a48f33cc8}{Contract.\+I\+Event\+Post\+Service}.
+
+\hypertarget{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_afd957411d2f00bfc798f3647e17d878c}{}\index{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service@{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service}!Edit@{Edit}}
+\index{Edit@{Edit}!Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service@{Bibabook\+::\+Implementation\+::\+Event\+Post\+::\+Event\+Post\+Service}}
+\subsubsection[{Edit}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service.\+Edit (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Event\+Post}}]{event\+Post, }
+\item[{string}]{new\+Content}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_afd957411d2f00bfc798f3647e17d878c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Implementation/\+Event\+Post/\hyperlink{_event_post_service_8cs}{Event\+Post\+Service.\+cs}\end{DoxyCompactItemize}

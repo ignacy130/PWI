@@ -1,0 +1,118 @@
+\hypertarget{namespace_contract}{}\section{Package Contract}
+\label{namespace_contract}\index{Contract@{Contract}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+package \hyperlink{namespace_contract_1_1_enums}{Enums}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \hyperlink{interface_contract_1_1_i_advanced_search_helper}{I\+Advanced\+Search\+Helper}
+\begin{DoxyCompactList}\small\item\em Zapewnia zaawansowane metody wyszukiwania obiektów na podstawie specjalnych warunków wyszukiwania. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event}
+\item 
+interface \hyperlink{interface_contract_1_1_i_app_event_service}{I\+App\+Event\+Service}
+\begin{DoxyCompactList}\small\item\em Zapewnia metody związane z obsługą wydarzenia. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User}
+\item 
+interface \hyperlink{interface_contract_1_1_i_app_user_email_service}{I\+App\+User\+Email\+Service}
+\begin{DoxyCompactList}\small\item\em Zapewnia funkcjonalność użytkownika związaną z otrzymywaniem lub wysyłaniem e-\/maili. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_app_user_service}{I\+App\+User\+Service}
+\begin{DoxyCompactList}\small\item\em Zawiera metody związane z obsługą kont użytkowników. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_app_user_social_service}{I\+App\+User\+Social\+Service}
+\begin{DoxyCompactList}\small\item\em Zapewnia funkcjonalność użytkownika związaną z funkcjami społecznościowymi. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_email}{I\+Email}
+\item 
+interface \hyperlink{interface_contract_1_1_i_email_service}{I\+Email\+Service}
+\begin{DoxyCompactList}\small\item\em Umożliwia wysłanie maila z konta systemu. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post}
+\item 
+interface \hyperlink{interface_contract_1_1_i_event_post_service}{I\+Event\+Post\+Service}
+\begin{DoxyCompactList}\small\item\em Zapewnia metody do zarządzania postami. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_notification}{I\+Notification}
+\item 
+interface \hyperlink{interface_contract_1_1_i_notification_service}{I\+Notification\+Service}
+\begin{DoxyCompactList}\small\item\em Zapewnia metody związane z obsługą powiadomień. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_post_comment}{I\+Post\+Comment}
+\item 
+interface \hyperlink{interface_contract_1_1_i_post_comment_service}{I\+Post\+Comment\+Service}
+\begin{DoxyCompactList}\small\item\em Zapewnia metody do zarządzania komentarzami. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_report_inappropriate_content_service}{I\+Report\+Inappropriate\+Content\+Service}
+\begin{DoxyCompactList}\small\item\em Wysyła e-\/maile do administacji związane z naruszeniami. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_searchable}{I\+Searchable}
+\item 
+interface \hyperlink{interface_contract_1_1_i_search_condition}{I\+Search\+Condition}
+\begin{DoxyCompactList}\small\item\em Określa warunek wyszukiwania. Np. Property\+Name = \char`\"{}\+Imie\char`\"{}, Value\+Seeked = \char`\"{}\+Anna\char`\"{}, Condition\+Type = Search\+Condition\+Type.\+Contains Property\+Name = \char`\"{}\+Wiek\char`\"{}, Value\+Seeked = \char`\"{}26\char`\"{}, Condition\+Type = Search\+Condition\+Type.\+Greater\+Or\+Equal \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_search_helper}{I\+Search\+Helper}
+\begin{DoxyCompactList}\small\item\em Zapewnia metody wyszukiwania rekordów o zadanych unikalnych identyfikatorach (G\+U\+I\+D) \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_search_parameters}{I\+Search\+Parameters}
+\begin{DoxyCompactList}\small\item\em Określa parametry wyszukiwania. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_contract_1_1_i_search_service}{I\+Search\+Service}
+\begin{DoxyCompactList}\small\item\em Zapewnia metody wyszukiwania obiektów w bazie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26}{Notification\+Status} \{ \hyperlink{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26aa2d00c353d1f9a5f07852650030dbd53}{Notification\+Status.\+Indeterminate}, 
+\hyperlink{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26a4d3d769b812b6faa6b76e1a8abaece2d}{Notification\+Status.\+Active}, 
+\hyperlink{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26a3cab03c00dbd11bc3569afa0748013f0}{Notification\+Status.\+Inactive}
+ \}
+\begin{DoxyCompactList}\small\item\em Status powiadomienia \end{DoxyCompactList}\item 
+enum \hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715}{Report\+Reason} \{ \\*
+\hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a6c5fb76d5902956dee0c0cda6c38ddfe}{Report\+Reason.\+Discrimination}, 
+\hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a55af0877395be017b8c5fcdab23d4d2e}{Report\+Reason.\+Illegal\+Substances}, 
+\hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a8e333cf086491a76cfbbccec5036a92a}{Report\+Reason.\+Illegal\+Activity}, 
+\hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715aa2af13cc96c7143873db4fb2c0119e82}{Report\+Reason.\+Gore}, 
+\\*
+\hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a3a8dbbbf0eb3b9cbb7fa1dbbced57907}{Report\+Reason.\+Pornography}, 
+\hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715ac6a741672934d9cccbb71fa8def9874b}{Report\+Reason.\+Innapropiate\+Age\+Category}, 
+\hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a6311ae17c1ee52b36e68aaf4ad066387}{Report\+Reason.\+Other}
+ \}
+\begin{DoxyCompactList}\small\item\em Powód zgłoszenia \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26}{}\index{Contract@{Contract}!Notification\+Status@{Notification\+Status}}
+\index{Notification\+Status@{Notification\+Status}!Contract@{Contract}}
+\subsubsection[{Notification\+Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Contract.\+Notification\+Status}}\label{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26}
+
+
+Status powiadomienia 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Indeterminate@{Indeterminate}!Contract@{Contract}}\index{Contract@{Contract}!Indeterminate@{Indeterminate}}\item[{\em 
+\hypertarget{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26aa2d00c353d1f9a5f07852650030dbd53}{}Indeterminate\label{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26aa2d00c353d1f9a5f07852650030dbd53}
+}]\index{Active@{Active}!Contract@{Contract}}\index{Contract@{Contract}!Active@{Active}}\item[{\em 
+\hypertarget{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26a4d3d769b812b6faa6b76e1a8abaece2d}{}Active\label{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26a4d3d769b812b6faa6b76e1a8abaece2d}
+}]\index{Inactive@{Inactive}!Contract@{Contract}}\index{Contract@{Contract}!Inactive@{Inactive}}\item[{\em 
+\hypertarget{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26a3cab03c00dbd11bc3569afa0748013f0}{}Inactive\label{namespace_contract_a825ee6cf36a3a102b109de3a1cbd9c26a3cab03c00dbd11bc3569afa0748013f0}
+}]\end{description}
+\end{Desc}
+\hypertarget{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715}{}\index{Contract@{Contract}!Report\+Reason@{Report\+Reason}}
+\index{Report\+Reason@{Report\+Reason}!Contract@{Contract}}
+\subsubsection[{Report\+Reason}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Contract.\+Report\+Reason}}\label{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715}
+
+
+Powód zgłoszenia 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Discrimination@{Discrimination}!Contract@{Contract}}\index{Contract@{Contract}!Discrimination@{Discrimination}}\item[{\em 
+\hypertarget{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a6c5fb76d5902956dee0c0cda6c38ddfe}{}Discrimination\label{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a6c5fb76d5902956dee0c0cda6c38ddfe}
+}]\index{Illegal\+Substances@{Illegal\+Substances}!Contract@{Contract}}\index{Contract@{Contract}!Illegal\+Substances@{Illegal\+Substances}}\item[{\em 
+\hypertarget{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a55af0877395be017b8c5fcdab23d4d2e}{}Illegal\+Substances\label{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a55af0877395be017b8c5fcdab23d4d2e}
+}]\index{Illegal\+Activity@{Illegal\+Activity}!Contract@{Contract}}\index{Contract@{Contract}!Illegal\+Activity@{Illegal\+Activity}}\item[{\em 
+\hypertarget{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a8e333cf086491a76cfbbccec5036a92a}{}Illegal\+Activity\label{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a8e333cf086491a76cfbbccec5036a92a}
+}]\index{Gore@{Gore}!Contract@{Contract}}\index{Contract@{Contract}!Gore@{Gore}}\item[{\em 
+\hypertarget{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715aa2af13cc96c7143873db4fb2c0119e82}{}Gore\label{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715aa2af13cc96c7143873db4fb2c0119e82}
+}]\index{Pornography@{Pornography}!Contract@{Contract}}\index{Contract@{Contract}!Pornography@{Pornography}}\item[{\em 
+\hypertarget{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a3a8dbbbf0eb3b9cbb7fa1dbbced57907}{}Pornography\label{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a3a8dbbbf0eb3b9cbb7fa1dbbced57907}
+}]\index{Innapropiate\+Age\+Category@{Innapropiate\+Age\+Category}!Contract@{Contract}}\index{Contract@{Contract}!Innapropiate\+Age\+Category@{Innapropiate\+Age\+Category}}\item[{\em 
+\hypertarget{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715ac6a741672934d9cccbb71fa8def9874b}{}Innapropiate\+Age\+Category\label{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715ac6a741672934d9cccbb71fa8def9874b}
+}]\index{Other@{Other}!Contract@{Contract}}\index{Contract@{Contract}!Other@{Other}}\item[{\em 
+\hypertarget{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a6311ae17c1ee52b36e68aaf4ad066387}{}Other\label{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715a6311ae17c1ee52b36e68aaf4ad066387}
+}]\end{description}
+\end{Desc}

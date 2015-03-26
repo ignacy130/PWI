@@ -1,0 +1,101 @@
+\hypertarget{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service}{}\section{Bibabook.\+Implementation.\+Report\+Service.\+Report\+Inappropriate\+Content\+Service Class Reference}
+\label{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service}\index{Bibabook.\+Implementation.\+Report\+Service.\+Report\+Inappropriate\+Content\+Service@{Bibabook.\+Implementation.\+Report\+Service.\+Report\+Inappropriate\+Content\+Service}}
+
+
+Inherits \hyperlink{interface_contract_1_1_i_report_inappropriate_content_service}{Contract.\+I\+Report\+Inappropriate\+Content\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service_a982d00d4c303fa7dbb15e456bad5da38}{Report\+Event} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} user\+Reporting, \hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} event\+Reported, \hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715}{Report\+Reason} reason)
+\begin{DoxyCompactList}\small\item\em Zgłasza wydarzenie. Administrator otrzymuje e-\/mail, że użytkownik zgłosił wydarzenie z określonego powodu. \end{DoxyCompactList}\item 
+void \hyperlink{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service_af3a633a947cc6ad5ce342e4687235dbd}{Report\+Post} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} user\+Reporting, \hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} post\+Reported, \hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715}{Report\+Reason} reason)
+\begin{DoxyCompactList}\small\item\em Zgłasza post. Administrator otrzymuje e-\/mail, że użytkownik zgłosił post z określonego powodu. \end{DoxyCompactList}\item 
+void \hyperlink{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service_a74b76271113ba71fee324a2903942061}{Report\+Comment} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} user\+Reporting, \hyperlink{interface_contract_1_1_i_post_comment}{I\+Post\+Comment} post\+Comment, \hyperlink{namespace_contract_ac533e9a5fffe5319dcbdc2388bc54715}{Report\+Reason} reason)
+\begin{DoxyCompactList}\small\item\em Zgłasza komentarz. Administrator otrzymuje e-\/mail, że użytkownik zgłosił komentarz z określonego powodu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service_a74b76271113ba71fee324a2903942061}{}\index{Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service@{Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service}!Report\+Comment@{Report\+Comment}}
+\index{Report\+Comment@{Report\+Comment}!Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service@{Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service}}
+\subsubsection[{Report\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}void Bibabook.\+Implementation.\+Report\+Service.\+Report\+Inappropriate\+Content\+Service.\+Report\+Comment (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{user\+Reporting, }
+\item[{{\bf I\+Post\+Comment}}]{post\+Comment, }
+\item[{{\bf Report\+Reason}}]{reason}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service_a74b76271113ba71fee324a2903942061}
+
+
+Zgłasza komentarz. Administrator otrzymuje e-\/mail, że użytkownik zgłosił komentarz z określonego powodu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Reporting} & Użytkownik zgłaszający\\
+\hline
+{\em post\+Reported} & Zgłoszony komentarz\\
+\hline
+{\em reason} & Powód zgłoszenia\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_contract_1_1_i_report_inappropriate_content_service_a893c8eb3b793586a468926a03ca1bb02}{Contract.\+I\+Report\+Inappropriate\+Content\+Service}.
+
+\hypertarget{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service_a982d00d4c303fa7dbb15e456bad5da38}{}\index{Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service@{Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service}!Report\+Event@{Report\+Event}}
+\index{Report\+Event@{Report\+Event}!Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service@{Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service}}
+\subsubsection[{Report\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Bibabook.\+Implementation.\+Report\+Service.\+Report\+Inappropriate\+Content\+Service.\+Report\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{user\+Reporting, }
+\item[{{\bf I\+App\+Event}}]{event\+Reported, }
+\item[{{\bf Report\+Reason}}]{reason}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service_a982d00d4c303fa7dbb15e456bad5da38}
+
+
+Zgłasza wydarzenie. Administrator otrzymuje e-\/mail, że użytkownik zgłosił wydarzenie z określonego powodu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Reporting} & Użytkownik zgłaszający\\
+\hline
+{\em event\+Reported} & Zgłoszone wydarzenie\\
+\hline
+{\em reason} & Powód zgłoszenia\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_contract_1_1_i_report_inappropriate_content_service_a2b127060ebec3e52cf1bdf7335996f1a}{Contract.\+I\+Report\+Inappropriate\+Content\+Service}.
+
+\hypertarget{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service_af3a633a947cc6ad5ce342e4687235dbd}{}\index{Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service@{Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service}!Report\+Post@{Report\+Post}}
+\index{Report\+Post@{Report\+Post}!Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service@{Bibabook\+::\+Implementation\+::\+Report\+Service\+::\+Report\+Inappropriate\+Content\+Service}}
+\subsubsection[{Report\+Post}]{\setlength{\rightskip}{0pt plus 5cm}void Bibabook.\+Implementation.\+Report\+Service.\+Report\+Inappropriate\+Content\+Service.\+Report\+Post (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{user\+Reporting, }
+\item[{{\bf I\+Event\+Post}}]{post\+Reported, }
+\item[{{\bf Report\+Reason}}]{reason}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_report_service_1_1_report_inappropriate_content_service_af3a633a947cc6ad5ce342e4687235dbd}
+
+
+Zgłasza post. Administrator otrzymuje e-\/mail, że użytkownik zgłosił post z określonego powodu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Reporting} & Użytkownik zgłaszający\\
+\hline
+{\em post\+Reported} & Zgłoszony post\\
+\hline
+{\em reason} & Powód zgłoszenia\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_contract_1_1_i_report_inappropriate_content_service_ab318b4b110b2d794f028f8af4f19704e}{Contract.\+I\+Report\+Inappropriate\+Content\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Implementation/\+Report\+Service/\hyperlink{_report_inappropriate_content_service_8cs}{Report\+Inappropriate\+Content\+Service.\+cs}\end{DoxyCompactItemize}

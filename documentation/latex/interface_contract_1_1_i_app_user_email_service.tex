@@ -1,0 +1,123 @@
+\hypertarget{interface_contract_1_1_i_app_user_email_service}{}\section{Contract.\+I\+App\+User\+Email\+Service Interface Reference}
+\label{interface_contract_1_1_i_app_user_email_service}\index{Contract.\+I\+App\+User\+Email\+Service@{Contract.\+I\+App\+User\+Email\+Service}}
+
+
+Zapewnia funkcjonalność użytkownika związaną z otrzymywaniem lub wysyłaniem e-\/maili.  
+
+
+
+
+Inherited by \hyperlink{class_bibabook_1_1_implementation_1_1_app_user_service_1_1_email_users_service}{Bibabook.\+Implementation.\+App\+User\+Service.\+Email\+Users\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_email_service_a4bbb7699b06b20a7739024a875a250b9}{Send\+Registration\+Verification\+Email} (String receiver\+Email\+Address, String user\+Name, String user\+Account\+Activation\+Link)
+\begin{DoxyCompactList}\small\item\em Wysyła e-\/mail z linkiem do aktywacji konta. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_email_service_a50ce075711a10042ce7542982ce44dd8}{Retrieve\+Password} (String receiver\+Email\+Address, String user\+Name, String user\+Password)
+\begin{DoxyCompactList}\small\item\em Wysyła e-\/mail z hasłem użytkownika. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_user_email_service_aa76521307a455023a8565d077b74f2d7}{Send\+Invitation} (String receiver\+Email\+Address, String user\+Name, String event\+Name)
+\begin{DoxyCompactList}\small\item\em Wysyła e-\/mail zachęcający do wzięcia udziału w wydarzeniu na podany adres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_contract_1_1_i_email_service}{I\+Email\+Service} \hyperlink{interface_contract_1_1_i_app_user_email_service_a3a34e4a0d4838e66755d83118e825f75}{Email\+Service}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Wykorzystywany serwis wysyłania wiadomości. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Zapewnia funkcjonalność użytkownika związaną z otrzymywaniem lub wysyłaniem e-\/maili. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_contract_1_1_i_app_user_email_service_a50ce075711a10042ce7542982ce44dd8}{}\index{Contract\+::\+I\+App\+User\+Email\+Service@{Contract\+::\+I\+App\+User\+Email\+Service}!Retrieve\+Password@{Retrieve\+Password}}
+\index{Retrieve\+Password@{Retrieve\+Password}!Contract\+::\+I\+App\+User\+Email\+Service@{Contract\+::\+I\+App\+User\+Email\+Service}}
+\subsubsection[{Retrieve\+Password}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Email\+Service.\+Retrieve\+Password (
+\begin{DoxyParamCaption}
+\item[{String}]{receiver\+Email\+Address, }
+\item[{String}]{user\+Name, }
+\item[{String}]{user\+Password}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_email_service_a50ce075711a10042ce7542982ce44dd8}
+
+
+Wysyła e-\/mail z hasłem użytkownika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em receiver\+Email\+Address} & Adres odbiorcy\\
+\hline
+{\em user\+Name} & Nazwa konta\\
+\hline
+{\em user\+Password} & Hasło użytkownika\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+\hypertarget{interface_contract_1_1_i_app_user_email_service_aa76521307a455023a8565d077b74f2d7}{}\index{Contract\+::\+I\+App\+User\+Email\+Service@{Contract\+::\+I\+App\+User\+Email\+Service}!Send\+Invitation@{Send\+Invitation}}
+\index{Send\+Invitation@{Send\+Invitation}!Contract\+::\+I\+App\+User\+Email\+Service@{Contract\+::\+I\+App\+User\+Email\+Service}}
+\subsubsection[{Send\+Invitation}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Email\+Service.\+Send\+Invitation (
+\begin{DoxyParamCaption}
+\item[{String}]{receiver\+Email\+Address, }
+\item[{String}]{user\+Name, }
+\item[{String}]{event\+Name}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_email_service_aa76521307a455023a8565d077b74f2d7}
+
+
+Wysyła e-\/mail zachęcający do wzięcia udziału w wydarzeniu na podany adres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em receiver\+Email\+Address} & Adres odbiorcy\\
+\hline
+{\em user\+Name} & Nazwa zapraszającego\\
+\hline
+{\em event\+Name} & Nazwa wydarzenia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{interface_contract_1_1_i_app_user_email_service_a4bbb7699b06b20a7739024a875a250b9}{}\index{Contract\+::\+I\+App\+User\+Email\+Service@{Contract\+::\+I\+App\+User\+Email\+Service}!Send\+Registration\+Verification\+Email@{Send\+Registration\+Verification\+Email}}
+\index{Send\+Registration\+Verification\+Email@{Send\+Registration\+Verification\+Email}!Contract\+::\+I\+App\+User\+Email\+Service@{Contract\+::\+I\+App\+User\+Email\+Service}}
+\subsubsection[{Send\+Registration\+Verification\+Email}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+User\+Email\+Service.\+Send\+Registration\+Verification\+Email (
+\begin{DoxyParamCaption}
+\item[{String}]{receiver\+Email\+Address, }
+\item[{String}]{user\+Name, }
+\item[{String}]{user\+Account\+Activation\+Link}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_user_email_service_a4bbb7699b06b20a7739024a875a250b9}
+
+
+Wysyła e-\/mail z linkiem do aktywacji konta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em receiver\+Email\+Address} & Adres odbiorcy\\
+\hline
+{\em user\+Name} & Nazwa aktywowanego konta\\
+\hline
+{\em user\+Account\+Activation\+Link} & Link aktywacyjny\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_contract_1_1_i_app_user_email_service_a3a34e4a0d4838e66755d83118e825f75}{}\index{Contract\+::\+I\+App\+User\+Email\+Service@{Contract\+::\+I\+App\+User\+Email\+Service}!Email\+Service@{Email\+Service}}
+\index{Email\+Service@{Email\+Service}!Contract\+::\+I\+App\+User\+Email\+Service@{Contract\+::\+I\+App\+User\+Email\+Service}}
+\subsubsection[{Email\+Service}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Email\+Service} Contract.\+I\+App\+User\+Email\+Service.\+Email\+Service\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{interface_contract_1_1_i_app_user_email_service_a3a34e4a0d4838e66755d83118e825f75}
+
+
+Wykorzystywany serwis wysyłania wiadomości. 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Contract/\+App\+User\+Service/\hyperlink{_i_app_user_email_service_8cs}{I\+App\+User\+Email\+Service.\+cs}\end{DoxyCompactItemize}

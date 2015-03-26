@@ -1,0 +1,121 @@
+\hypertarget{interface_contract_1_1_i_email_service}{}\section{Contract.\+I\+Email\+Service Interface Reference}
+\label{interface_contract_1_1_i_email_service}\index{Contract.\+I\+Email\+Service@{Contract.\+I\+Email\+Service}}
+
+
+Umożliwia wysłanie maila z konta systemu.  
+
+
+
+
+Inherited by \hyperlink{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service}{Bibabook.\+Implementation.\+Email\+Service.\+Email\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_contract_1_1_i_email}{I\+Email} \hyperlink{interface_contract_1_1_i_email_service_ac27044f09d3a6e499f54ac0fcefef31e}{Create\+Email} (String receiver\+Email\+Address, String subject, String message)
+\begin{DoxyCompactList}\small\item\em Tworzy wiadomość e-\/mail. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_email_service_aa4cd47c61363f21b7d8011779439564e}{Send\+Email} (\hyperlink{interface_contract_1_1_i_email}{I\+Email} email)
+\begin{DoxyCompactList}\small\item\em Wysyła e-\/mail z konta systemu. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_email_service_a572c401d8cf8fe1e85abd84e8c8df819}{Send\+Email} (I\+Collection$<$ String $>$ receivers\+Email\+Addresses, String subject, String message)
+\begin{DoxyCompactList}\small\item\em Wysyła e-\/mail z konta systemu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Smtp\+Client \hyperlink{interface_contract_1_1_i_email_service_a251967a7317f40696e5ffbecd71ca93b}{Client}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Wykorzystywany klient smtp \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Umożliwia wysłanie maila z konta systemu. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_contract_1_1_i_email_service_ac27044f09d3a6e499f54ac0fcefef31e}{}\index{Contract\+::\+I\+Email\+Service@{Contract\+::\+I\+Email\+Service}!Create\+Email@{Create\+Email}}
+\index{Create\+Email@{Create\+Email}!Contract\+::\+I\+Email\+Service@{Contract\+::\+I\+Email\+Service}}
+\subsubsection[{Create\+Email}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Email} Contract.\+I\+Email\+Service.\+Create\+Email (
+\begin{DoxyParamCaption}
+\item[{String}]{receiver\+Email\+Address, }
+\item[{String}]{subject, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_email_service_ac27044f09d3a6e499f54ac0fcefef31e}
+
+
+Tworzy wiadomość e-\/mail. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em receiver\+Email\+Address} & Adres e-\/mail odbiorcy\\
+\hline
+{\em subject} & Temat wiadomości\\
+\hline
+{\em message} & Treść\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nowy e-\/mail
+\end{DoxyReturn}
+\hypertarget{interface_contract_1_1_i_email_service_aa4cd47c61363f21b7d8011779439564e}{}\index{Contract\+::\+I\+Email\+Service@{Contract\+::\+I\+Email\+Service}!Send\+Email@{Send\+Email}}
+\index{Send\+Email@{Send\+Email}!Contract\+::\+I\+Email\+Service@{Contract\+::\+I\+Email\+Service}}
+\subsubsection[{Send\+Email}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Email\+Service.\+Send\+Email (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Email}}]{email}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_email_service_aa4cd47c61363f21b7d8011779439564e}
+
+
+Wysyła e-\/mail z konta systemu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Wysyłany e-\/mail\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_email_service_1_1_email_service_a50ff5fcda3821c245f32052c2793f713}{Bibabook.\+Implementation.\+Email\+Service.\+Email\+Service}.
+
+\hypertarget{interface_contract_1_1_i_email_service_a572c401d8cf8fe1e85abd84e8c8df819}{}\index{Contract\+::\+I\+Email\+Service@{Contract\+::\+I\+Email\+Service}!Send\+Email@{Send\+Email}}
+\index{Send\+Email@{Send\+Email}!Contract\+::\+I\+Email\+Service@{Contract\+::\+I\+Email\+Service}}
+\subsubsection[{Send\+Email}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Email\+Service.\+Send\+Email (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ String $>$}]{receivers\+Email\+Addresses, }
+\item[{String}]{subject, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_email_service_a572c401d8cf8fe1e85abd84e8c8df819}
+
+
+Wysyła e-\/mail z konta systemu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em receiver\+Email\+Address} & Adresy odbiorców\\
+\hline
+{\em subject} & Temat wiadomości\\
+\hline
+{\em message} & Treść\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_contract_1_1_i_email_service_a251967a7317f40696e5ffbecd71ca93b}{}\index{Contract\+::\+I\+Email\+Service@{Contract\+::\+I\+Email\+Service}!Client@{Client}}
+\index{Client@{Client}!Contract\+::\+I\+Email\+Service@{Contract\+::\+I\+Email\+Service}}
+\subsubsection[{Client}]{\setlength{\rightskip}{0pt plus 5cm}Smtp\+Client Contract.\+I\+Email\+Service.\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{interface_contract_1_1_i_email_service_a251967a7317f40696e5ffbecd71ca93b}
+
+
+Wykorzystywany klient smtp 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Contract/\+Email\+Service/\hyperlink{_i_email_service_8cs}{I\+Email\+Service.\+cs}\end{DoxyCompactItemize}

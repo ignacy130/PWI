@@ -1,0 +1,7 @@
+var namespace_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers =
+[
+    [ "AdvancedSearchHelper", "class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_advanced_search_helper.html", "class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_advanced_search_helper" ],
+    [ "SearchCondition", "class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_condition.html", "class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_condition" ],
+    [ "SearchHelper", "class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_helper.html", "class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_helper" ],
+    [ "SearchParameters", "class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_parameters.html", "class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_parameters" ]
+];

@@ -1,0 +1,4 @@
+var namespace_bibabook_1_1_implementation_1_1_notification_service =
+[
+    [ "NotificationService", "class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service.html", "class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service" ]
+];

@@ -1,0 +1,332 @@
+\hypertarget{interface_contract_1_1_i_app_event_service}{}\section{Contract.\+I\+App\+Event\+Service Interface Reference}
+\label{interface_contract_1_1_i_app_event_service}\index{Contract.\+I\+App\+Event\+Service@{Contract.\+I\+App\+Event\+Service}}
+
+
+Zapewnia metody związane z obsługą wydarzenia.  
+
+
+
+
+Inherited by \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_a6dc064133c574d73bbd0246c408948c2}{Create} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} app\+Event)
+\begin{DoxyCompactList}\small\item\em Dodaje wydarzenia do bazy danych. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_ace6a7e896bc3c461dcd0f455eb315d00}{Cancel} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} app\+Event)
+\begin{DoxyCompactList}\small\item\em Odwołuje wydarzenie. Powinno zostać oznaczone w bazie jako nieaktywne. Wszyscy przypisani użytkownicy powinni otrzymać stosowne powiadomienie (notyfikację). Opcja ta dostępna powinna być wyłącznie dla twórcy wydarzenia. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_adafb6d6697e7968571bb42a13a9cbc41}{Delete} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} app\+Event)
+\begin{DoxyCompactList}\small\item\em Kasuje wydarzenie (np. z powodu naruszenia). Powinno zostać ono usunięte z bazy. Wszystkie przypisane do niego posty powinny zostać skasowane. Wszyscy przypisani użytkownicy powinni otrzymać stosowne powiadomienie (notyfikację). Opcja ta dostępna powinna być wyłącznie dla moderatorów. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_a4ae422cd32e1abfbaca20593aedbd3a8}{Invite\+User} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} app\+Event, \hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} sender, \hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} recipient)
+\begin{DoxyCompactList}\small\item\em Zaprasza użytkownika na wydarzenie. Użytkownik powinien otrzymać stosowne powiadomienie. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_aa4911fab308fd95363a320e66f966008}{Invite\+User} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+Event, \hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} sender, I\+Collection$<$ \hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} $>$ recipients)
+\begin{DoxyCompactList}\small\item\em Zaprasza użytkowników na wydarzenie. Użytkownicy powinni otrzymać stosowne powiadomienia. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_ab38ba81f92630710c3963f21d2a2c6d9}{Enroll\+User} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+Event, \hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User)
+\begin{DoxyCompactList}\small\item\em Zapisuje użytkownika na wydarzenie. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_ae09bccf9eb9aecac41361ed6b62fe7ee}{Remove\+User} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} app\+Event, \hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User)
+\begin{DoxyCompactList}\small\item\em Wypisuje użytkownika z wydarzenia. Użytkownik może wypisać się sam, może zostać wyproszony przez właściciela wydarzenia lub przez moderatorów. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_a5d4ee6f582b1d006fe5891d1b1d7a251}{Remove\+User} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} app\+Event, I\+Collection$<$ \hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} $>$ app\+Users)
+\begin{DoxyCompactList}\small\item\em Wypisuje użytkowników z wydarzenia. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_a0ccea08ba533d1f8dda9c913ddf2be76}{Forbid\+User} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} app\+Event, \hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User)
+\begin{DoxyCompactList}\small\item\em Nakłada zakaz partycypacji użytkownika w wydarzeniu. Dodaje użytkownika do listy użytkowników, którzy nie mogą zapisać się na wydarzenie. Opcja ta dostępna powinna być wyłącznie dla twórcy wydarzenia. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_a4bfa9938451298e1eca595a14dca89f9}{Allow\+User} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} app\+Event, \hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User)
+\begin{DoxyCompactList}\small\item\em Anuluje zakaz partycypacji użytkownika w wydarzeniu. Opcja ta dostępna powinna być wyłącznie dla twórcy wydarzenia. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_app_event_service_a58b8be2ea7f4ada3e4ba825f83414394}{Add\+Event\+Post} (\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} app\+Event, \hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} event\+Post)
+\begin{DoxyCompactList}\small\item\em Przypisuje post do wydarzenia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Zapewnia metody związane z obsługą wydarzenia. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_contract_1_1_i_app_event_service_a58b8be2ea7f4ada3e4ba825f83414394}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Add\+Event\+Post@{Add\+Event\+Post}}
+\index{Add\+Event\+Post@{Add\+Event\+Post}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Add\+Event\+Post}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Add\+Event\+Post (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{app\+Event, }
+\item[{{\bf I\+Event\+Post}}]{event\+Post}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_a58b8be2ea7f4ada3e4ba825f83414394}
+
+
+Przypisuje post do wydarzenia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Wydarzenie\\
+\hline
+{\em event\+Post} & Przypisywany post\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a8c3fe9b4bbbc6185ef233b43f568a750}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_event_service_a4bfa9938451298e1eca595a14dca89f9}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Allow\+User@{Allow\+User}}
+\index{Allow\+User@{Allow\+User}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Allow\+User}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Allow\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{app\+Event, }
+\item[{{\bf I\+App\+User}}]{app\+User}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_a4bfa9938451298e1eca595a14dca89f9}
+
+
+Anuluje zakaz partycypacji użytkownika w wydarzeniu. Opcja ta dostępna powinna być wyłącznie dla twórcy wydarzenia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Wydarzenie\\
+\hline
+{\em app\+Users} & Użytkownik\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ae1ace711340dc8ddda7a94a8740d3bda}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_event_service_ace6a7e896bc3c461dcd0f455eb315d00}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Cancel@{Cancel}}
+\index{Cancel@{Cancel}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Cancel}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Cancel (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{app\+Event}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_ace6a7e896bc3c461dcd0f455eb315d00}
+
+
+Odwołuje wydarzenie. Powinno zostać oznaczone w bazie jako nieaktywne. Wszyscy przypisani użytkownicy powinni otrzymać stosowne powiadomienie (notyfikację). Opcja ta dostępna powinna być wyłącznie dla twórcy wydarzenia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Instancja odwoływanego wydarzenia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ae9d6dffe48aa929b26bac38dfb0c459a}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_event_service_a6dc064133c574d73bbd0246c408948c2}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Create@{Create}}
+\index{Create@{Create}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Create (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{app\+Event}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_a6dc064133c574d73bbd0246c408948c2}
+
+
+Dodaje wydarzenia do bazy danych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Wydarzenie, które należy umieścić w bazie.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a3c3a0b4555e239f36e49615e3ca056cd}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_event_service_adafb6d6697e7968571bb42a13a9cbc41}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Delete@{Delete}}
+\index{Delete@{Delete}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{app\+Event}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_adafb6d6697e7968571bb42a13a9cbc41}
+
+
+Kasuje wydarzenie (np. z powodu naruszenia). Powinno zostać ono usunięte z bazy. Wszystkie przypisane do niego posty powinny zostać skasowane. Wszyscy przypisani użytkownicy powinni otrzymać stosowne powiadomienie (notyfikację). Opcja ta dostępna powinna być wyłącznie dla moderatorów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Instancja odwoływanego wydarzenia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a18493d649b2ea4c86428968f62eebcf5}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_event_service_ab38ba81f92630710c3963f21d2a2c6d9}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Enroll\+User@{Enroll\+User}}
+\index{Enroll\+User@{Enroll\+User}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Enroll\+User}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Enroll\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+Event, }
+\item[{{\bf I\+App\+User}}]{app\+User}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_ab38ba81f92630710c3963f21d2a2c6d9}
+
+
+Zapisuje użytkownika na wydarzenie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Instancja wydarzenia\\
+\hline
+{\em app\+User} & Zapisywany użytkownik\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a1eb61bcaade404a395c9b79ac9fa17e4}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_event_service_a0ccea08ba533d1f8dda9c913ddf2be76}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Forbid\+User@{Forbid\+User}}
+\index{Forbid\+User@{Forbid\+User}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Forbid\+User}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Forbid\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{app\+Event, }
+\item[{{\bf I\+App\+User}}]{app\+User}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_a0ccea08ba533d1f8dda9c913ddf2be76}
+
+
+Nakłada zakaz partycypacji użytkownika w wydarzeniu. Dodaje użytkownika do listy użytkowników, którzy nie mogą zapisać się na wydarzenie. Opcja ta dostępna powinna być wyłącznie dla twórcy wydarzenia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Wydarzenie\\
+\hline
+{\em app\+Users} & Użytkownik\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ab23587341dc178c31d1270ea2dc70a65}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_event_service_a4ae422cd32e1abfbaca20593aedbd3a8}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Invite\+User@{Invite\+User}}
+\index{Invite\+User@{Invite\+User}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Invite\+User}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Invite\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{app\+Event, }
+\item[{{\bf I\+App\+User}}]{sender, }
+\item[{{\bf I\+App\+User}}]{recipient}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_a4ae422cd32e1abfbaca20593aedbd3a8}
+
+
+Zaprasza użytkownika na wydarzenie. Użytkownik powinien otrzymać stosowne powiadomienie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Instancja wydarzenia\\
+\hline
+{\em sender} & Użytkownik zapraszający\\
+\hline
+{\em recipient} & Adresat zaproszenia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a03db2f4f2c7892f9a721c8fd58b86f45}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_event_service_aa4911fab308fd95363a320e66f966008}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Invite\+User@{Invite\+User}}
+\index{Invite\+User@{Invite\+User}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Invite\+User}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Invite\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+Event, }
+\item[{{\bf I\+App\+User}}]{sender, }
+\item[{I\+Collection$<$ {\bf I\+App\+User} $>$}]{recipients}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_aa4911fab308fd95363a320e66f966008}
+
+
+Zaprasza użytkowników na wydarzenie. Użytkownicy powinni otrzymać stosowne powiadomienia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Instancja wydarzenia\\
+\hline
+{\em sender} & Użytkownik zapraszający\\
+\hline
+{\em recipients} & Adresaci zaproszenia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_ab44fc0ac1b5abc5c1544943ebab32c80}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_event_service_ae09bccf9eb9aecac41361ed6b62fe7ee}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Remove\+User@{Remove\+User}}
+\index{Remove\+User@{Remove\+User}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Remove\+User}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Remove\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{app\+Event, }
+\item[{{\bf I\+App\+User}}]{app\+User}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_ae09bccf9eb9aecac41361ed6b62fe7ee}
+
+
+Wypisuje użytkownika z wydarzenia. Użytkownik może wypisać się sam, może zostać wyproszony przez właściciela wydarzenia lub przez moderatorów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Instancja wydarzenia\\
+\hline
+{\em app\+User} & Wypisywany użytkownik\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a640cf9c1a0dee37f7b320eded34d129d}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+\hypertarget{interface_contract_1_1_i_app_event_service_a5d4ee6f582b1d006fe5891d1b1d7a251}{}\index{Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}!Remove\+User@{Remove\+User}}
+\index{Remove\+User@{Remove\+User}!Contract\+::\+I\+App\+Event\+Service@{Contract\+::\+I\+App\+Event\+Service}}
+\subsubsection[{Remove\+User}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+App\+Event\+Service.\+Remove\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+Event}}]{app\+Event, }
+\item[{I\+Collection$<$ {\bf I\+App\+User} $>$}]{app\+Users}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_app_event_service_a5d4ee6f582b1d006fe5891d1b1d7a251}
+
+
+Wypisuje użytkowników z wydarzenia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event} & Instancja wydarzenia\\
+\hline
+{\em app\+Users} & Wypisywany użytkownik\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_app_event_service_1_1_events_service_a425edae1da002dcceeebd6bf65c316b0}{Bibabook.\+Implementation.\+App\+Event\+Service.\+Events\+Service}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Contract/\+App\+Event\+Service/\hyperlink{_i_app_event_service_8cs}{I\+App\+Event\+Service.\+cs}\end{DoxyCompactItemize}

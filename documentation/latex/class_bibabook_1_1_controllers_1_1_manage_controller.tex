@@ -1,0 +1,251 @@
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller}{}\section{Bibabook.\+Controllers.\+Manage\+Controller Class Reference}
+\label{class_bibabook_1_1_controllers_1_1_manage_controller}\index{Bibabook.\+Controllers.\+Manage\+Controller@{Bibabook.\+Controllers.\+Manage\+Controller}}
+
+
+Inherits Controller.
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403}{Manage\+Message\+Id} \{ \\*
+\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403af08d36b2147213fadb3b223d149ac802}{Manage\+Message\+Id.\+Add\+Phone\+Success}, 
+\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a0053618c57496fec45c67daf91919394}{Manage\+Message\+Id.\+Change\+Password\+Success}, 
+\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403af17987d9118fd576fed3cbec8d11bd8b}{Manage\+Message\+Id.\+Set\+Two\+Factor\+Success}, 
+\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403af17ca72fcf8adaa46d5e87b12ec3a27d}{Manage\+Message\+Id.\+Set\+Password\+Success}, 
+\\*
+\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a46e53931d0e837638a46368b2b04ba6a}{Manage\+Message\+Id.\+Remove\+Login\+Success}, 
+\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a70460d8db9c29752c1f591eb67a60fdc}{Manage\+Message\+Id.\+Remove\+Phone\+Success}, 
+\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a902b0d55fddef6f8d651fe1035b7d4bd}{Manage\+Message\+Id.\+Error}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a8a7d195592a7eae6792e15d4424691d2}{Manage\+Controller} ()
+\item 
+\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a9b1fa818676229e55134c567736c5a5c}{Manage\+Controller} (\hyperlink{class_bibabook_1_1_application_user_manager}{Application\+User\+Manager} user\+Manager, \hyperlink{class_bibabook_1_1_application_sign_in_manager}{Application\+Sign\+In\+Manager} sign\+In\+Manager)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a560ba09d4a32d1a13b0b94500fa6fe8c}{Index} (\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403}{Manage\+Message\+Id}?message)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_ab81450b5dfbb9013c2f9a42e58caa541}{Remove\+Login} (string login\+Provider, string provider\+Key)
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a760227d71f3ff5dd36f5d5c5cc5189da}{Add\+Phone\+Number} ()
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_af1a3bf84009add5f0e16a048a078c08f}{Add\+Phone\+Number} (\hyperlink{class_bibabook_1_1_models_1_1_add_phone_number_view_model}{Add\+Phone\+Number\+View\+Model} model)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a08577ea6c3251ca9d29d41f20a732a65}{Enable\+Two\+Factor\+Authentication} ()
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_acd10d6fbc373d3788e4a66588cc292e0}{Disable\+Two\+Factor\+Authentication} ()
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_ac3a72ec2be19a70a6df482757161004b}{Verify\+Phone\+Number} (string phone\+Number)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a8968ba1b75d7ef1fb9254fa2fe8a12e1}{Verify\+Phone\+Number} (\hyperlink{class_bibabook_1_1_models_1_1_verify_phone_number_view_model}{Verify\+Phone\+Number\+View\+Model} model)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_aef2fc431ab285e63fd6de8c2a2eb90fe}{Remove\+Phone\+Number} ()
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_ae6bf412bf1512c116540f90c574ca375}{Change\+Password} ()
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a30f5a9ce5f18dec8cd055e9781f126d1}{Change\+Password} (\hyperlink{class_bibabook_1_1_models_1_1_change_password_view_model}{Change\+Password\+View\+Model} model)
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a535915a6f304f78133ea210aadba3880}{Set\+Password} ()
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a4d619280a5747095a7120e13ae688893}{Set\+Password} (\hyperlink{class_bibabook_1_1_models_1_1_set_password_view_model}{Set\+Password\+View\+Model} model)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a31b09e10e35c68702bd01820f5cb9858}{Manage\+Logins} (\hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403}{Manage\+Message\+Id}?message)
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a9e81bd294a460916f8f00d17e9ffd4d3}{Link\+Login} (string provider)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a07c2d39dd76836d870b87d8c0eb3803a}{Link\+Login\+Callback} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a62308464afbd8fa7ee86851f65791ba8}{Dispose} (bool disposing)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bibabook_1_1_application_sign_in_manager}{Application\+Sign\+In\+Manager} \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a6ca8e2674446d848d3e55ad11c6a793d}{Sign\+In\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{class_bibabook_1_1_application_user_manager}{Application\+User\+Manager} \hyperlink{class_bibabook_1_1_controllers_1_1_manage_controller_a81e4c8f2c91ff5ff9a7bf29c40a26fac}{User\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Manage\+Message\+Id@{Manage\+Message\+Id}}
+\index{Manage\+Message\+Id@{Manage\+Message\+Id}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Manage\+Message\+Id}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Bibabook.\+Controllers.\+Manage\+Controller.\+Manage\+Message\+Id}}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Add\+Phone\+Success@{Add\+Phone\+Success}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Add\+Phone\+Success@{Add\+Phone\+Success}}\item[{\em 
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403af08d36b2147213fadb3b223d149ac802}{}Add\+Phone\+Success\label{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403af08d36b2147213fadb3b223d149ac802}
+}]\index{Change\+Password\+Success@{Change\+Password\+Success}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Change\+Password\+Success@{Change\+Password\+Success}}\item[{\em 
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a0053618c57496fec45c67daf91919394}{}Change\+Password\+Success\label{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a0053618c57496fec45c67daf91919394}
+}]\index{Set\+Two\+Factor\+Success@{Set\+Two\+Factor\+Success}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Set\+Two\+Factor\+Success@{Set\+Two\+Factor\+Success}}\item[{\em 
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403af17987d9118fd576fed3cbec8d11bd8b}{}Set\+Two\+Factor\+Success\label{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403af17987d9118fd576fed3cbec8d11bd8b}
+}]\index{Set\+Password\+Success@{Set\+Password\+Success}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Set\+Password\+Success@{Set\+Password\+Success}}\item[{\em 
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403af17ca72fcf8adaa46d5e87b12ec3a27d}{}Set\+Password\+Success\label{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403af17ca72fcf8adaa46d5e87b12ec3a27d}
+}]\index{Remove\+Login\+Success@{Remove\+Login\+Success}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Remove\+Login\+Success@{Remove\+Login\+Success}}\item[{\em 
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a46e53931d0e837638a46368b2b04ba6a}{}Remove\+Login\+Success\label{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a46e53931d0e837638a46368b2b04ba6a}
+}]\index{Remove\+Phone\+Success@{Remove\+Phone\+Success}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Remove\+Phone\+Success@{Remove\+Phone\+Success}}\item[{\em 
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a70460d8db9c29752c1f591eb67a60fdc}{}Remove\+Phone\+Success\label{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a70460d8db9c29752c1f591eb67a60fdc}
+}]\index{Error@{Error}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Error@{Error}}\item[{\em 
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a902b0d55fddef6f8d651fe1035b7d4bd}{}Error\label{class_bibabook_1_1_controllers_1_1_manage_controller_a11520cf302554950f1aeac2bd8137403a902b0d55fddef6f8d651fe1035b7d4bd}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a8a7d195592a7eae6792e15d4424691d2}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Manage\+Controller@{Manage\+Controller}}
+\index{Manage\+Controller@{Manage\+Controller}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Manage\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}Bibabook.\+Controllers.\+Manage\+Controller.\+Manage\+Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a8a7d195592a7eae6792e15d4424691d2}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a9b1fa818676229e55134c567736c5a5c}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Manage\+Controller@{Manage\+Controller}}
+\index{Manage\+Controller@{Manage\+Controller}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Manage\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}Bibabook.\+Controllers.\+Manage\+Controller.\+Manage\+Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf Application\+User\+Manager}}]{user\+Manager, }
+\item[{{\bf Application\+Sign\+In\+Manager}}]{sign\+In\+Manager}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a9b1fa818676229e55134c567736c5a5c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a760227d71f3ff5dd36f5d5c5cc5189da}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Add\+Phone\+Number@{Add\+Phone\+Number}}
+\index{Add\+Phone\+Number@{Add\+Phone\+Number}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Add\+Phone\+Number}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Manage\+Controller.\+Add\+Phone\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a760227d71f3ff5dd36f5d5c5cc5189da}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_af1a3bf84009add5f0e16a048a078c08f}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Add\+Phone\+Number@{Add\+Phone\+Number}}
+\index{Add\+Phone\+Number@{Add\+Phone\+Number}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Add\+Phone\+Number}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Add\+Phone\+Number (
+\begin{DoxyParamCaption}
+\item[{{\bf Add\+Phone\+Number\+View\+Model}}]{model}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_af1a3bf84009add5f0e16a048a078c08f}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_ae6bf412bf1512c116540f90c574ca375}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Change\+Password@{Change\+Password}}
+\index{Change\+Password@{Change\+Password}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Change\+Password}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Manage\+Controller.\+Change\+Password (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_ae6bf412bf1512c116540f90c574ca375}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a30f5a9ce5f18dec8cd055e9781f126d1}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Change\+Password@{Change\+Password}}
+\index{Change\+Password@{Change\+Password}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Change\+Password}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Change\+Password (
+\begin{DoxyParamCaption}
+\item[{{\bf Change\+Password\+View\+Model}}]{model}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a30f5a9ce5f18dec8cd055e9781f126d1}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_acd10d6fbc373d3788e4a66588cc292e0}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Disable\+Two\+Factor\+Authentication@{Disable\+Two\+Factor\+Authentication}}
+\index{Disable\+Two\+Factor\+Authentication@{Disable\+Two\+Factor\+Authentication}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Disable\+Two\+Factor\+Authentication}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Disable\+Two\+Factor\+Authentication (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_acd10d6fbc373d3788e4a66588cc292e0}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a62308464afbd8fa7ee86851f65791ba8}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}override void Bibabook.\+Controllers.\+Manage\+Controller.\+Dispose (
+\begin{DoxyParamCaption}
+\item[{bool}]{disposing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a62308464afbd8fa7ee86851f65791ba8}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a08577ea6c3251ca9d29d41f20a732a65}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Enable\+Two\+Factor\+Authentication@{Enable\+Two\+Factor\+Authentication}}
+\index{Enable\+Two\+Factor\+Authentication@{Enable\+Two\+Factor\+Authentication}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Enable\+Two\+Factor\+Authentication}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Enable\+Two\+Factor\+Authentication (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a08577ea6c3251ca9d29d41f20a732a65}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a560ba09d4a32d1a13b0b94500fa6fe8c}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Index@{Index}}
+\index{Index@{Index}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Index}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf Manage\+Message\+Id}?}]{message}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a560ba09d4a32d1a13b0b94500fa6fe8c}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a9e81bd294a460916f8f00d17e9ffd4d3}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Link\+Login@{Link\+Login}}
+\index{Link\+Login@{Link\+Login}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Link\+Login}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Manage\+Controller.\+Link\+Login (
+\begin{DoxyParamCaption}
+\item[{string}]{provider}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a9e81bd294a460916f8f00d17e9ffd4d3}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a07c2d39dd76836d870b87d8c0eb3803a}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Link\+Login\+Callback@{Link\+Login\+Callback}}
+\index{Link\+Login\+Callback@{Link\+Login\+Callback}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Link\+Login\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Link\+Login\+Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a07c2d39dd76836d870b87d8c0eb3803a}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a31b09e10e35c68702bd01820f5cb9858}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Manage\+Logins@{Manage\+Logins}}
+\index{Manage\+Logins@{Manage\+Logins}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Manage\+Logins}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Manage\+Logins (
+\begin{DoxyParamCaption}
+\item[{{\bf Manage\+Message\+Id}?}]{message}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a31b09e10e35c68702bd01820f5cb9858}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_ab81450b5dfbb9013c2f9a42e58caa541}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Remove\+Login@{Remove\+Login}}
+\index{Remove\+Login@{Remove\+Login}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Remove\+Login}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Remove\+Login (
+\begin{DoxyParamCaption}
+\item[{string}]{login\+Provider, }
+\item[{string}]{provider\+Key}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_ab81450b5dfbb9013c2f9a42e58caa541}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_aef2fc431ab285e63fd6de8c2a2eb90fe}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Remove\+Phone\+Number@{Remove\+Phone\+Number}}
+\index{Remove\+Phone\+Number@{Remove\+Phone\+Number}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Remove\+Phone\+Number}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Remove\+Phone\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_aef2fc431ab285e63fd6de8c2a2eb90fe}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a535915a6f304f78133ea210aadba3880}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Set\+Password@{Set\+Password}}
+\index{Set\+Password@{Set\+Password}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Set\+Password}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Manage\+Controller.\+Set\+Password (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a535915a6f304f78133ea210aadba3880}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a4d619280a5747095a7120e13ae688893}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Set\+Password@{Set\+Password}}
+\index{Set\+Password@{Set\+Password}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Set\+Password}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Set\+Password (
+\begin{DoxyParamCaption}
+\item[{{\bf Set\+Password\+View\+Model}}]{model}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a4d619280a5747095a7120e13ae688893}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_ac3a72ec2be19a70a6df482757161004b}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Verify\+Phone\+Number@{Verify\+Phone\+Number}}
+\index{Verify\+Phone\+Number@{Verify\+Phone\+Number}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Verify\+Phone\+Number}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Verify\+Phone\+Number (
+\begin{DoxyParamCaption}
+\item[{string}]{phone\+Number}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_ac3a72ec2be19a70a6df482757161004b}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a8968ba1b75d7ef1fb9254fa2fe8a12e1}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Verify\+Phone\+Number@{Verify\+Phone\+Number}}
+\index{Verify\+Phone\+Number@{Verify\+Phone\+Number}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Verify\+Phone\+Number}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Manage\+Controller.\+Verify\+Phone\+Number (
+\begin{DoxyParamCaption}
+\item[{{\bf Verify\+Phone\+Number\+View\+Model}}]{model}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a8968ba1b75d7ef1fb9254fa2fe8a12e1}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a6ca8e2674446d848d3e55ad11c6a793d}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!Sign\+In\+Manager@{Sign\+In\+Manager}}
+\index{Sign\+In\+Manager@{Sign\+In\+Manager}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{Sign\+In\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Application\+Sign\+In\+Manager} Bibabook.\+Controllers.\+Manage\+Controller.\+Sign\+In\+Manager\hspace{0.3cm}{\ttfamily [get]}}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a6ca8e2674446d848d3e55ad11c6a793d}
+\hypertarget{class_bibabook_1_1_controllers_1_1_manage_controller_a81e4c8f2c91ff5ff9a7bf29c40a26fac}{}\index{Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}!User\+Manager@{User\+Manager}}
+\index{User\+Manager@{User\+Manager}!Bibabook\+::\+Controllers\+::\+Manage\+Controller@{Bibabook\+::\+Controllers\+::\+Manage\+Controller}}
+\subsubsection[{User\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Application\+User\+Manager} Bibabook.\+Controllers.\+Manage\+Controller.\+User\+Manager\hspace{0.3cm}{\ttfamily [get]}}\label{class_bibabook_1_1_controllers_1_1_manage_controller_a81e4c8f2c91ff5ff9a7bf29c40a26fac}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook/\+Controllers/\hyperlink{_manage_controller_8cs}{Manage\+Controller.\+cs}\end{DoxyCompactItemize}

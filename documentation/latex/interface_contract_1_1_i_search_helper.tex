@@ -1,0 +1,152 @@
+\hypertarget{interface_contract_1_1_i_search_helper}{}\section{Contract.\+I\+Search\+Helper Interface Reference}
+\label{interface_contract_1_1_i_search_helper}\index{Contract.\+I\+Search\+Helper@{Contract.\+I\+Search\+Helper}}
+
+
+Zapewnia metody wyszukiwania rekordów o zadanych unikalnych identyfikatorach (G\+U\+I\+D)  
+
+
+
+
+Inherited by \hyperlink{class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_helper}{Bibabook.\+Implementation.\+Search\+Service.\+Search\+Helpers.\+Search\+Helper}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} \hyperlink{interface_contract_1_1_i_search_helper_a94caeabc4d085d4d9fe20a30b64f64b2}{Search\+User} (Guid app\+User\+Id)
+\begin{DoxyCompactList}\small\item\em Metoda wyszukująca w bazie użytkownika o podanym identyfikatorze. \end{DoxyCompactList}\item 
+\hyperlink{interface_contract_1_1_i_app_event}{I\+App\+Event} \hyperlink{interface_contract_1_1_i_search_helper_ab22158401db3a5d83acd9ac12c43f6ed}{Search\+Event} (Guid app\+Event\+Id)
+\begin{DoxyCompactList}\small\item\em Metoda wyszukująca w bazie wydarzenie o podanym identyfikatorze. \end{DoxyCompactList}\item 
+\hyperlink{interface_contract_1_1_i_notification}{I\+Notification} \hyperlink{interface_contract_1_1_i_search_helper_a21c140b1dd02497a486a6cc79893f98b}{Search\+Notification} (Guid notification\+Id)
+\begin{DoxyCompactList}\small\item\em Metoda wyszukująca w bazie powiadomienie o podanym identyfikatorze. \end{DoxyCompactList}\item 
+\hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} \hyperlink{interface_contract_1_1_i_search_helper_a96eedd48e8e11c90080969f0cff04a2b}{Search\+Post} (Guid event\+Post\+Id)
+\begin{DoxyCompactList}\small\item\em Metoda wyszukująca w bazie post o podanym identyfikatorze. \end{DoxyCompactList}\item 
+\hyperlink{interface_contract_1_1_i_post_comment}{I\+Post\+Comment} \hyperlink{interface_contract_1_1_i_search_helper_a2a8b67f56c6f4f63533a033e44fa2691}{Search\+Comment} (Guid post\+Comment\+Id)
+\begin{DoxyCompactList}\small\item\em Metoda wyszukująca w bazie komentarzy o podanym identyfikatorze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Zapewnia metody wyszukiwania rekordów o zadanych unikalnych identyfikatorach (G\+U\+I\+D) 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_contract_1_1_i_search_helper_a2a8b67f56c6f4f63533a033e44fa2691}{}\index{Contract\+::\+I\+Search\+Helper@{Contract\+::\+I\+Search\+Helper}!Search\+Comment@{Search\+Comment}}
+\index{Search\+Comment@{Search\+Comment}!Contract\+::\+I\+Search\+Helper@{Contract\+::\+I\+Search\+Helper}}
+\subsubsection[{Search\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Post\+Comment} Contract.\+I\+Search\+Helper.\+Search\+Comment (
+\begin{DoxyParamCaption}
+\item[{Guid}]{post\+Comment\+Id}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_search_helper_a2a8b67f56c6f4f63533a033e44fa2691}
+
+
+Metoda wyszukująca w bazie komentarzy o podanym identyfikatorze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em post\+Comment\+Id} & Unikalny identyfikator komentarza (G\+U\+I\+D)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Komentarz o określonym identyfikatorze lub null, gdy takowy nie istnieje
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_helper_a2935e38b59d91cb767a2b1ba3de91d75}{Bibabook.\+Implementation.\+Search\+Service.\+Search\+Helpers.\+Search\+Helper}.
+
+\hypertarget{interface_contract_1_1_i_search_helper_ab22158401db3a5d83acd9ac12c43f6ed}{}\index{Contract\+::\+I\+Search\+Helper@{Contract\+::\+I\+Search\+Helper}!Search\+Event@{Search\+Event}}
+\index{Search\+Event@{Search\+Event}!Contract\+::\+I\+Search\+Helper@{Contract\+::\+I\+Search\+Helper}}
+\subsubsection[{Search\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+App\+Event} Contract.\+I\+Search\+Helper.\+Search\+Event (
+\begin{DoxyParamCaption}
+\item[{Guid}]{app\+Event\+Id}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_search_helper_ab22158401db3a5d83acd9ac12c43f6ed}
+
+
+Metoda wyszukująca w bazie wydarzenie o podanym identyfikatorze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Event\+Id} & Unikalny identyfikator wydarzenia (G\+U\+I\+D)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wydarzenie o określonym identyfikatorze lub null, gdy takowe nie istnieje
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_helper_a1bb87e7993fbb6f80a635e8c6607eb7f}{Bibabook.\+Implementation.\+Search\+Service.\+Search\+Helpers.\+Search\+Helper}.
+
+\hypertarget{interface_contract_1_1_i_search_helper_a21c140b1dd02497a486a6cc79893f98b}{}\index{Contract\+::\+I\+Search\+Helper@{Contract\+::\+I\+Search\+Helper}!Search\+Notification@{Search\+Notification}}
+\index{Search\+Notification@{Search\+Notification}!Contract\+::\+I\+Search\+Helper@{Contract\+::\+I\+Search\+Helper}}
+\subsubsection[{Search\+Notification}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Notification} Contract.\+I\+Search\+Helper.\+Search\+Notification (
+\begin{DoxyParamCaption}
+\item[{Guid}]{notification\+Id}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_search_helper_a21c140b1dd02497a486a6cc79893f98b}
+
+
+Metoda wyszukująca w bazie powiadomienie o podanym identyfikatorze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification\+Id} & Unikalny identyfikator powiadomienia (G\+U\+I\+D)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Powiadomienie o określonym identyfikatorze lub null, gdy takowe nie istnieje
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_helper_a24f1ae5080c207f8ce519d196e849acd}{Bibabook.\+Implementation.\+Search\+Service.\+Search\+Helpers.\+Search\+Helper}.
+
+\hypertarget{interface_contract_1_1_i_search_helper_a96eedd48e8e11c90080969f0cff04a2b}{}\index{Contract\+::\+I\+Search\+Helper@{Contract\+::\+I\+Search\+Helper}!Search\+Post@{Search\+Post}}
+\index{Search\+Post@{Search\+Post}!Contract\+::\+I\+Search\+Helper@{Contract\+::\+I\+Search\+Helper}}
+\subsubsection[{Search\+Post}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Event\+Post} Contract.\+I\+Search\+Helper.\+Search\+Post (
+\begin{DoxyParamCaption}
+\item[{Guid}]{event\+Post\+Id}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_search_helper_a96eedd48e8e11c90080969f0cff04a2b}
+
+
+Metoda wyszukująca w bazie post o podanym identyfikatorze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post\+Id} & Unikalny identyfikator posta (G\+U\+I\+D)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Post o określonym identyfikatorze lub null, gdy takowy nie istnieje
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_helper_a413a28aa268b6953571fc9c9849a731f}{Bibabook.\+Implementation.\+Search\+Service.\+Search\+Helpers.\+Search\+Helper}.
+
+\hypertarget{interface_contract_1_1_i_search_helper_a94caeabc4d085d4d9fe20a30b64f64b2}{}\index{Contract\+::\+I\+Search\+Helper@{Contract\+::\+I\+Search\+Helper}!Search\+User@{Search\+User}}
+\index{Search\+User@{Search\+User}!Contract\+::\+I\+Search\+Helper@{Contract\+::\+I\+Search\+Helper}}
+\subsubsection[{Search\+User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+App\+User} Contract.\+I\+Search\+Helper.\+Search\+User (
+\begin{DoxyParamCaption}
+\item[{Guid}]{app\+User\+Id}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_search_helper_a94caeabc4d085d4d9fe20a30b64f64b2}
+
+
+Metoda wyszukująca w bazie użytkownika o podanym identyfikatorze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+User\+Id} & Unikalny identyfikator użytkownika (G\+U\+I\+D)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Użytkownik o określonym identyfikatorze lub null, gdy takowy nie istnieje
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_search_service_1_1_search_helpers_1_1_search_helper_a8b39cc678b93c48100fb0f8be980cc5c}{Bibabook.\+Implementation.\+Search\+Service.\+Search\+Helpers.\+Search\+Helper}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Contract/\+Search\+Service/\+Search\+Helpers/\hyperlink{_i_search_helper_8cs}{I\+Search\+Helper.\+cs}\end{DoxyCompactItemize}

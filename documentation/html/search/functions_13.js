@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['vendorpropname',['vendorPropName',['../_bibabook_2_scripts_2jquery-1_810_82_8js.html#a6a111234d6e26ce833f8fabd50819b7a',1,'vendorPropName(style, name):&#160;jquery-1.10.2.js'],['../packages_2j_query_81_810_82_2_content_2_scripts_2jquery-1_810_82_8js.html#a6a111234d6e26ce833f8fabd50819b7a',1,'vendorPropName(style, name):&#160;jquery-1.10.2.js']]],
+  ['verifyaccount',['VerifyAccount',['../interface_contract_1_1_i_app_user_service.html#af86ad71018d6fe4e6a9f3ad9c941dad1',1,'Contract.IAppUserService.VerifyAccount()'],['../class_bibabook_1_1_implementation_1_1_app_user_service_1_1_users_service.html#abfc1fda74aa855425d06128ff4c57d0c',1,'Bibabook.Implementation.AppUserService.UsersService.VerifyAccount()']]],
+  ['verifycode',['VerifyCode',['../class_bibabook_1_1_controllers_1_1_account_controller.html#a85aa51d27b3ca02a72111d1c1d4cf63f',1,'Bibabook.Controllers.AccountController.VerifyCode(string provider, string returnUrl, bool rememberMe)'],['../class_bibabook_1_1_controllers_1_1_account_controller.html#ac3836ca0db8ea4e9480d78e24e34d5d3',1,'Bibabook.Controllers.AccountController.VerifyCode(VerifyCodeViewModel model)']]],
+  ['verifyphonenumber',['VerifyPhoneNumber',['../class_bibabook_1_1_controllers_1_1_manage_controller.html#ac3a72ec2be19a70a6df482757161004b',1,'Bibabook.Controllers.ManageController.VerifyPhoneNumber(string phoneNumber)'],['../class_bibabook_1_1_controllers_1_1_manage_controller.html#a8968ba1b75d7ef1fb9254fa2fe8a12e1',1,'Bibabook.Controllers.ManageController.VerifyPhoneNumber(VerifyPhoneNumberViewModel model)']]]
+];

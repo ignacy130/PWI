@@ -1,0 +1,72 @@
+\hypertarget{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service}{}\section{Bibabook.\+Implementation.\+Notification\+Service.\+Notification\+Service Class Reference}
+\label{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service}\index{Bibabook.\+Implementation.\+Notification\+Service.\+Notification\+Service@{Bibabook.\+Implementation.\+Notification\+Service.\+Notification\+Service}}
+
+
+odpowiedzialny za powiadamianie uzytkowników o zdarzeniach w aplikacji takich jak\+: zaproszenia na wydarzenie, zmiana parametrów wydarzenia, otrzymanie zaproszenia do grona znajomych  
+
+
+
+
+Inherits \hyperlink{interface_contract_1_1_i_notification_service}{Contract.\+I\+Notification\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service_aa7b8c602d5a131a45750533b9bcf2fe0}{Create} (\hyperlink{interface_contract_1_1_i_notification}{I\+Notification} notification)
+\begin{DoxyCompactList}\small\item\em Dodaje powiadomienie do bazy. \end{DoxyCompactList}\item 
+bool \hyperlink{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service_afd21583a36aa8ef0c7c775300200d798}{Set\+Notification\+Status} (\hyperlink{interface_contract_1_1_i_notification}{I\+Notification} notification, \hyperlink{namespace_contract_1_1_enums_acc3ee7ff530d140749aef3196a50ae4c}{Notification\+Status} notification\+Status)
+\item 
+I\+Collection$<$ \hyperlink{interface_contract_1_1_i_notification}{I\+Notification} $>$ \hyperlink{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service_a90481a88843dca93fb03274cddb461ad}{Get\+User\+Notifications} (\hyperlink{interface_contract_1_1_i_app_user}{I\+App\+User} app\+User, I\+Collection$<$ \hyperlink{namespace_contract_1_1_enums_acc3ee7ff530d140749aef3196a50ae4c}{Notification\+Status} $>$ accepted\+Statuses=null)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+odpowiedzialny za powiadamianie uzytkowników o zdarzeniach w aplikacji takich jak\+: zaproszenia na wydarzenie, zmiana parametrów wydarzenia, otrzymanie zaproszenia do grona znajomych 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service_aa7b8c602d5a131a45750533b9bcf2fe0}{}\index{Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service@{Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service}!Create@{Create}}
+\index{Create@{Create}!Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service@{Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+Notification\+Service.\+Notification\+Service.\+Create (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Notification}}]{notification}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service_aa7b8c602d5a131a45750533b9bcf2fe0}
+
+
+Dodaje powiadomienie do bazy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post} & Dodawane powiadomienie\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_contract_1_1_i_notification_service_acfc2b40ce5ee992f1525f85938780209}{Contract.\+I\+Notification\+Service}.
+
+\hypertarget{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service_a90481a88843dca93fb03274cddb461ad}{}\index{Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service@{Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service}!Get\+User\+Notifications@{Get\+User\+Notifications}}
+\index{Get\+User\+Notifications@{Get\+User\+Notifications}!Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service@{Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service}}
+\subsubsection[{Get\+User\+Notifications}]{\setlength{\rightskip}{0pt plus 5cm}I\+Collection$<${\bf I\+Notification}$>$ Bibabook.\+Implementation.\+Notification\+Service.\+Notification\+Service.\+Get\+User\+Notifications (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+App\+User}}]{app\+User, }
+\item[{I\+Collection$<$ {\bf Notification\+Status} $>$}]{accepted\+Statuses = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service_a90481a88843dca93fb03274cddb461ad}
+\hypertarget{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service_afd21583a36aa8ef0c7c775300200d798}{}\index{Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service@{Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service}!Set\+Notification\+Status@{Set\+Notification\+Status}}
+\index{Set\+Notification\+Status@{Set\+Notification\+Status}!Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service@{Bibabook\+::\+Implementation\+::\+Notification\+Service\+::\+Notification\+Service}}
+\subsubsection[{Set\+Notification\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool Bibabook.\+Implementation.\+Notification\+Service.\+Notification\+Service.\+Set\+Notification\+Status (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Notification}}]{notification, }
+\item[{{\bf Notification\+Status}}]{notification\+Status}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_implementation_1_1_notification_service_1_1_notification_service_afd21583a36aa8ef0c7c775300200d798}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Implementation/\+Notification\+Service/\hyperlink{_notification_service_8cs}{Notification\+Service.\+cs}\end{DoxyCompactItemize}

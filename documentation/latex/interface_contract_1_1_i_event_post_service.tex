@@ -1,0 +1,129 @@
+\hypertarget{interface_contract_1_1_i_event_post_service}{}\section{Contract.\+I\+Event\+Post\+Service Interface Reference}
+\label{interface_contract_1_1_i_event_post_service}\index{Contract.\+I\+Event\+Post\+Service@{Contract.\+I\+Event\+Post\+Service}}
+
+
+Zapewnia metody do zarządzania postami.  
+
+
+
+
+Inherited by \hyperlink{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service}{Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{interface_contract_1_1_i_event_post_service_a11a32da680394e2cf58b30a792bc218b}{Create} (\hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} event\+Post)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy post do bazy. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_event_post_service_a0a2f3bf67dcf7bc340e9371cffb8844d}{Edit} (\hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} event\+Post, String new\+Content)
+\begin{DoxyCompactList}\small\item\em Zmienia treść posta. Opcja ta powinna być dostepna wyłącznie dla autora posta oraz moderatorów. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_event_post_service_a24e60ba2af24abfe6d50df5f893500ea}{Add\+Post\+Comment} (\hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} event\+Post, \hyperlink{interface_contract_1_1_i_post_comment}{I\+Post\+Comment} post\+Comment)
+\begin{DoxyCompactList}\small\item\em Przypisuje komentarz do posta. \end{DoxyCompactList}\item 
+Boolean \hyperlink{interface_contract_1_1_i_event_post_service_a89a1e0b21e6123c0e927a92a48f33cc8}{Delete} (\hyperlink{interface_contract_1_1_i_event_post}{I\+Event\+Post} event\+Post)
+\begin{DoxyCompactList}\small\item\em Trwale kasuje post z bazy danych. Wszystkie przypisane do niego komentarze także powinny zostać skasowane. Opcja ta powinna być dostepna wyłącznie dla autora posta, właściciela wydarzenia oraz moderatorów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Zapewnia metody do zarządzania postami. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_contract_1_1_i_event_post_service_a24e60ba2af24abfe6d50df5f893500ea}{}\index{Contract\+::\+I\+Event\+Post\+Service@{Contract\+::\+I\+Event\+Post\+Service}!Add\+Post\+Comment@{Add\+Post\+Comment}}
+\index{Add\+Post\+Comment@{Add\+Post\+Comment}!Contract\+::\+I\+Event\+Post\+Service@{Contract\+::\+I\+Event\+Post\+Service}}
+\subsubsection[{Add\+Post\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Event\+Post\+Service.\+Add\+Post\+Comment (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Event\+Post}}]{event\+Post, }
+\item[{{\bf I\+Post\+Comment}}]{post\+Comment}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_event_post_service_a24e60ba2af24abfe6d50df5f893500ea}
+
+
+Przypisuje komentarz do posta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post} & Instancja posta\\
+\hline
+{\em post\+Comment} & Instancja komentarza\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_afcfcf99aa0a6a13868479ba42526a534}{Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service}.
+
+\hypertarget{interface_contract_1_1_i_event_post_service_a11a32da680394e2cf58b30a792bc218b}{}\index{Contract\+::\+I\+Event\+Post\+Service@{Contract\+::\+I\+Event\+Post\+Service}!Create@{Create}}
+\index{Create@{Create}!Contract\+::\+I\+Event\+Post\+Service@{Contract\+::\+I\+Event\+Post\+Service}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Event\+Post\+Service.\+Create (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Event\+Post}}]{event\+Post}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_event_post_service_a11a32da680394e2cf58b30a792bc218b}
+
+
+Dodaje nowy post do bazy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post} & Dodawany post\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko prz ebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_ad2657b93d677033ccdbf2957281e0ea1}{Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service}.
+
+\hypertarget{interface_contract_1_1_i_event_post_service_a89a1e0b21e6123c0e927a92a48f33cc8}{}\index{Contract\+::\+I\+Event\+Post\+Service@{Contract\+::\+I\+Event\+Post\+Service}!Delete@{Delete}}
+\index{Delete@{Delete}!Contract\+::\+I\+Event\+Post\+Service@{Contract\+::\+I\+Event\+Post\+Service}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Event\+Post\+Service.\+Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Event\+Post}}]{event\+Post}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_event_post_service_a89a1e0b21e6123c0e927a92a48f33cc8}
+
+
+Trwale kasuje post z bazy danych. Wszystkie przypisane do niego komentarze także powinny zostać skasowane. Opcja ta powinna być dostepna wyłącznie dla autora posta, właściciela wydarzenia oraz moderatorów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post} & Instancja posta do skasowania\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bibabook_1_1_implementation_1_1_event_post_1_1_event_post_service_a540d3592cb666ebc10f1f9a36a80269c}{Bibabook.\+Implementation.\+Event\+Post.\+Event\+Post\+Service}.
+
+\hypertarget{interface_contract_1_1_i_event_post_service_a0a2f3bf67dcf7bc340e9371cffb8844d}{}\index{Contract\+::\+I\+Event\+Post\+Service@{Contract\+::\+I\+Event\+Post\+Service}!Edit@{Edit}}
+\index{Edit@{Edit}!Contract\+::\+I\+Event\+Post\+Service@{Contract\+::\+I\+Event\+Post\+Service}}
+\subsubsection[{Edit}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Contract.\+I\+Event\+Post\+Service.\+Edit (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Event\+Post}}]{event\+Post, }
+\item[{String}]{new\+Content}
+\end{DoxyParamCaption}
+)}\label{interface_contract_1_1_i_event_post_service_a0a2f3bf67dcf7bc340e9371cffb8844d}
+
+
+Zmienia treść posta. Opcja ta powinna być dostepna wyłącznie dla autora posta oraz moderatorów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Post} & Instancja posta\\
+\hline
+{\em new\+Content} & Nowa treść posta\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda jeśli wszystko przebiegło bez problemów. Fałsz w przeciwnym przypadku.
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook.\+Contract/\+Event\+Post/\hyperlink{_i_event_post_service_8cs}{I\+Event\+Post\+Service.\+cs}\end{DoxyCompactItemize}

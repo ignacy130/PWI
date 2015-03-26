@@ -1,0 +1,259 @@
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller}{}\section{Bibabook.\+Controllers.\+Account\+Controller Class Reference}
+\label{class_bibabook_1_1_controllers_1_1_account_controller}\index{Bibabook.\+Controllers.\+Account\+Controller@{Bibabook.\+Controllers.\+Account\+Controller}}
+
+
+Inherits Controller.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Challenge\+Result}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a7d8fb75f85b1b2e21c791b8e7fbf2b04}{Account\+Controller} ()
+\item 
+\hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_ae63289a87668ea58c877b1a898375a32}{Account\+Controller} (\hyperlink{class_bibabook_1_1_application_user_manager}{Application\+User\+Manager} user\+Manager, \hyperlink{class_bibabook_1_1_application_sign_in_manager}{Application\+Sign\+In\+Manager} sign\+In\+Manager)
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_ad545238e18bd4f42815d3a51fb4b3fa5}{Login} (string return\+Url)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a4876c3d5288417f00e25b2b2c0f1eea6}{Login} (\hyperlink{class_bibabook_1_1_models_1_1_login_view_model}{Login\+View\+Model} model, string return\+Url)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a85aa51d27b3ca02a72111d1c1d4cf63f}{Verify\+Code} (string provider, string return\+Url, bool remember\+Me)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_ac3836ca0db8ea4e9480d78e24e34d5d3}{Verify\+Code} (\hyperlink{class_bibabook_1_1_models_1_1_verify_code_view_model}{Verify\+Code\+View\+Model} model)
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a534052f3188710b4555416191646c991}{Register} ()
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a593243bfd951f2fe98971f76a703d6fd}{Register} (\hyperlink{class_bibabook_1_1_models_1_1_register_view_model}{Register\+View\+Model} model)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_aea98d3e70f9c6050ba9746a860d31837}{Confirm\+Email} (string user\+Id, string code)
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_ab438507a72c59d1abc5426fb7e2968da}{Forgot\+Password} ()
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a15b6e7261c3ae2d06e2af37ca22cbb78}{Forgot\+Password} (\hyperlink{class_bibabook_1_1_models_1_1_forgot_password_view_model}{Forgot\+Password\+View\+Model} model)
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a56c894752c07df35e0bfdce011cc1777}{Forgot\+Password\+Confirmation} ()
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_ab9f95d898f59c8b7c17ff0d0af2ff9a7}{Reset\+Password} (string code)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a6d12ebcda9b75057e8380e7a829e9065}{Reset\+Password} (\hyperlink{class_bibabook_1_1_models_1_1_reset_password_view_model}{Reset\+Password\+View\+Model} model)
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a9e3d1e98a6fe0eec9a209f3bd6db09e1}{Reset\+Password\+Confirmation} ()
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a40e010202f5ef39483a1cbd5118a7b11}{External\+Login} (string provider, string return\+Url)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_af147abd204cedbaf0af04c99baae4e03}{Send\+Code} (string return\+Url, bool remember\+Me)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a2ff1a733c7015c75ebd643e252f87f06}{Send\+Code} (\hyperlink{class_bibabook_1_1_models_1_1_send_code_view_model}{Send\+Code\+View\+Model} model)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a5197a1d386b13d06ea145ce8bbb85423}{External\+Login\+Callback} (string return\+Url)
+\item 
+async Task$<$ Action\+Result $>$ \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a85795f1b98396876cb43dd00e0038808}{External\+Login\+Confirmation} (\hyperlink{class_bibabook_1_1_models_1_1_external_login_confirmation_view_model}{External\+Login\+Confirmation\+View\+Model} model, string return\+Url)
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_ad15c68dd2e6b54e70d2704de65d5e4f0}{Log\+Off} ()
+\item 
+Action\+Result \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a8586c70c456a53036840a19408c0c193}{External\+Login\+Failure} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_aeff056264f05d4eae034b29f3e1af14e}{Dispose} (bool disposing)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bibabook_1_1_application_sign_in_manager}{Application\+Sign\+In\+Manager} \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_afe8626a3c1e1f14fc65048a8effd0c71}{Sign\+In\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{class_bibabook_1_1_application_user_manager}{Application\+User\+Manager} \hyperlink{class_bibabook_1_1_controllers_1_1_account_controller_a75283f080ea6dd6dfffedacaeddc31cf}{User\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a7d8fb75f85b1b2e21c791b8e7fbf2b04}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Account\+Controller@{Account\+Controller}}
+\index{Account\+Controller@{Account\+Controller}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Account\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}Bibabook.\+Controllers.\+Account\+Controller.\+Account\+Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a7d8fb75f85b1b2e21c791b8e7fbf2b04}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_ae63289a87668ea58c877b1a898375a32}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Account\+Controller@{Account\+Controller}}
+\index{Account\+Controller@{Account\+Controller}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Account\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}Bibabook.\+Controllers.\+Account\+Controller.\+Account\+Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf Application\+User\+Manager}}]{user\+Manager, }
+\item[{{\bf Application\+Sign\+In\+Manager}}]{sign\+In\+Manager}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_ae63289a87668ea58c877b1a898375a32}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_aea98d3e70f9c6050ba9746a860d31837}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Confirm\+Email@{Confirm\+Email}}
+\index{Confirm\+Email@{Confirm\+Email}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Confirm\+Email}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+Confirm\+Email (
+\begin{DoxyParamCaption}
+\item[{string}]{user\+Id, }
+\item[{string}]{code}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_aea98d3e70f9c6050ba9746a860d31837}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_aeff056264f05d4eae034b29f3e1af14e}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}override void Bibabook.\+Controllers.\+Account\+Controller.\+Dispose (
+\begin{DoxyParamCaption}
+\item[{bool}]{disposing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_bibabook_1_1_controllers_1_1_account_controller_aeff056264f05d4eae034b29f3e1af14e}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a40e010202f5ef39483a1cbd5118a7b11}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!External\+Login@{External\+Login}}
+\index{External\+Login@{External\+Login}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{External\+Login}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Account\+Controller.\+External\+Login (
+\begin{DoxyParamCaption}
+\item[{string}]{provider, }
+\item[{string}]{return\+Url}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a40e010202f5ef39483a1cbd5118a7b11}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a5197a1d386b13d06ea145ce8bbb85423}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!External\+Login\+Callback@{External\+Login\+Callback}}
+\index{External\+Login\+Callback@{External\+Login\+Callback}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{External\+Login\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+External\+Login\+Callback (
+\begin{DoxyParamCaption}
+\item[{string}]{return\+Url}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a5197a1d386b13d06ea145ce8bbb85423}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a85795f1b98396876cb43dd00e0038808}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!External\+Login\+Confirmation@{External\+Login\+Confirmation}}
+\index{External\+Login\+Confirmation@{External\+Login\+Confirmation}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{External\+Login\+Confirmation}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+External\+Login\+Confirmation (
+\begin{DoxyParamCaption}
+\item[{{\bf External\+Login\+Confirmation\+View\+Model}}]{model, }
+\item[{string}]{return\+Url}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a85795f1b98396876cb43dd00e0038808}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a8586c70c456a53036840a19408c0c193}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!External\+Login\+Failure@{External\+Login\+Failure}}
+\index{External\+Login\+Failure@{External\+Login\+Failure}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{External\+Login\+Failure}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Account\+Controller.\+External\+Login\+Failure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a8586c70c456a53036840a19408c0c193}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_ab438507a72c59d1abc5426fb7e2968da}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Forgot\+Password@{Forgot\+Password}}
+\index{Forgot\+Password@{Forgot\+Password}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Forgot\+Password}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Account\+Controller.\+Forgot\+Password (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_ab438507a72c59d1abc5426fb7e2968da}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a15b6e7261c3ae2d06e2af37ca22cbb78}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Forgot\+Password@{Forgot\+Password}}
+\index{Forgot\+Password@{Forgot\+Password}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Forgot\+Password}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+Forgot\+Password (
+\begin{DoxyParamCaption}
+\item[{{\bf Forgot\+Password\+View\+Model}}]{model}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a15b6e7261c3ae2d06e2af37ca22cbb78}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a56c894752c07df35e0bfdce011cc1777}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Forgot\+Password\+Confirmation@{Forgot\+Password\+Confirmation}}
+\index{Forgot\+Password\+Confirmation@{Forgot\+Password\+Confirmation}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Forgot\+Password\+Confirmation}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Account\+Controller.\+Forgot\+Password\+Confirmation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a56c894752c07df35e0bfdce011cc1777}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_ad545238e18bd4f42815d3a51fb4b3fa5}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Login@{Login}}
+\index{Login@{Login}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Login}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Account\+Controller.\+Login (
+\begin{DoxyParamCaption}
+\item[{string}]{return\+Url}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_ad545238e18bd4f42815d3a51fb4b3fa5}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a4876c3d5288417f00e25b2b2c0f1eea6}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Login@{Login}}
+\index{Login@{Login}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Login}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+Login (
+\begin{DoxyParamCaption}
+\item[{{\bf Login\+View\+Model}}]{model, }
+\item[{string}]{return\+Url}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a4876c3d5288417f00e25b2b2c0f1eea6}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_ad15c68dd2e6b54e70d2704de65d5e4f0}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Log\+Off@{Log\+Off}}
+\index{Log\+Off@{Log\+Off}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Log\+Off}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Account\+Controller.\+Log\+Off (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_ad15c68dd2e6b54e70d2704de65d5e4f0}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a534052f3188710b4555416191646c991}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Register@{Register}}
+\index{Register@{Register}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Register}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Account\+Controller.\+Register (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a534052f3188710b4555416191646c991}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a593243bfd951f2fe98971f76a703d6fd}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Register@{Register}}
+\index{Register@{Register}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Register}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+Register (
+\begin{DoxyParamCaption}
+\item[{{\bf Register\+View\+Model}}]{model}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a593243bfd951f2fe98971f76a703d6fd}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_ab9f95d898f59c8b7c17ff0d0af2ff9a7}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Reset\+Password@{Reset\+Password}}
+\index{Reset\+Password@{Reset\+Password}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Reset\+Password}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Account\+Controller.\+Reset\+Password (
+\begin{DoxyParamCaption}
+\item[{string}]{code}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_ab9f95d898f59c8b7c17ff0d0af2ff9a7}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a6d12ebcda9b75057e8380e7a829e9065}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Reset\+Password@{Reset\+Password}}
+\index{Reset\+Password@{Reset\+Password}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Reset\+Password}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+Reset\+Password (
+\begin{DoxyParamCaption}
+\item[{{\bf Reset\+Password\+View\+Model}}]{model}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a6d12ebcda9b75057e8380e7a829e9065}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a9e3d1e98a6fe0eec9a209f3bd6db09e1}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Reset\+Password\+Confirmation@{Reset\+Password\+Confirmation}}
+\index{Reset\+Password\+Confirmation@{Reset\+Password\+Confirmation}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Reset\+Password\+Confirmation}]{\setlength{\rightskip}{0pt plus 5cm}Action\+Result Bibabook.\+Controllers.\+Account\+Controller.\+Reset\+Password\+Confirmation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a9e3d1e98a6fe0eec9a209f3bd6db09e1}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_af147abd204cedbaf0af04c99baae4e03}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Send\+Code@{Send\+Code}}
+\index{Send\+Code@{Send\+Code}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Send\+Code}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+Send\+Code (
+\begin{DoxyParamCaption}
+\item[{string}]{return\+Url, }
+\item[{bool}]{remember\+Me}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_af147abd204cedbaf0af04c99baae4e03}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a2ff1a733c7015c75ebd643e252f87f06}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Send\+Code@{Send\+Code}}
+\index{Send\+Code@{Send\+Code}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Send\+Code}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+Send\+Code (
+\begin{DoxyParamCaption}
+\item[{{\bf Send\+Code\+View\+Model}}]{model}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a2ff1a733c7015c75ebd643e252f87f06}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a85aa51d27b3ca02a72111d1c1d4cf63f}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Verify\+Code@{Verify\+Code}}
+\index{Verify\+Code@{Verify\+Code}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Verify\+Code}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+Verify\+Code (
+\begin{DoxyParamCaption}
+\item[{string}]{provider, }
+\item[{string}]{return\+Url, }
+\item[{bool}]{remember\+Me}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_a85aa51d27b3ca02a72111d1c1d4cf63f}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_ac3836ca0db8ea4e9480d78e24e34d5d3}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Verify\+Code@{Verify\+Code}}
+\index{Verify\+Code@{Verify\+Code}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Verify\+Code}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Action\+Result$>$ Bibabook.\+Controllers.\+Account\+Controller.\+Verify\+Code (
+\begin{DoxyParamCaption}
+\item[{{\bf Verify\+Code\+View\+Model}}]{model}
+\end{DoxyParamCaption}
+)}\label{class_bibabook_1_1_controllers_1_1_account_controller_ac3836ca0db8ea4e9480d78e24e34d5d3}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_afe8626a3c1e1f14fc65048a8effd0c71}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!Sign\+In\+Manager@{Sign\+In\+Manager}}
+\index{Sign\+In\+Manager@{Sign\+In\+Manager}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{Sign\+In\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Application\+Sign\+In\+Manager} Bibabook.\+Controllers.\+Account\+Controller.\+Sign\+In\+Manager\hspace{0.3cm}{\ttfamily [get]}}\label{class_bibabook_1_1_controllers_1_1_account_controller_afe8626a3c1e1f14fc65048a8effd0c71}
+\hypertarget{class_bibabook_1_1_controllers_1_1_account_controller_a75283f080ea6dd6dfffedacaeddc31cf}{}\index{Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}!User\+Manager@{User\+Manager}}
+\index{User\+Manager@{User\+Manager}!Bibabook\+::\+Controllers\+::\+Account\+Controller@{Bibabook\+::\+Controllers\+::\+Account\+Controller}}
+\subsubsection[{User\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Application\+User\+Manager} Bibabook.\+Controllers.\+Account\+Controller.\+User\+Manager\hspace{0.3cm}{\ttfamily [get]}}\label{class_bibabook_1_1_controllers_1_1_account_controller_a75283f080ea6dd6dfffedacaeddc31cf}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+D/\+P\+R\+O\+J\+E\+K\+T\+Y/strony/\+Bibabook/\+Repo/bibabook/\+Bibabook/\+Bibabook/\+Controllers/\hyperlink{_account_controller_8cs}{Account\+Controller.\+cs}\end{DoxyCompactItemize}
