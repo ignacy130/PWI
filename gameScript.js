@@ -21,6 +21,28 @@ function stringNumValue(text) {
     return value;
 }
 
+function compareStrings(source, origin) {
+    var sL = source.length,
+        oL = origin.length,
+        s=0,
+        i=2,
+        r=-2;
+    var correct = 0;
+    for (s = 0; s < sL; s++) {
+        for (i = 2; i < sL; i++) {
+            for (r = -2; r < 2; r++) {
+                var tc=source[s];
+                var it = i+r;
+                if (origin[it] === tc)
+                {
+                    correct++;
+                    break;
+                }
+            }
+        }
+    }
+}
+
 function startGame() {
     "use strict";
     setTimeout(startEating, 2 * 1000);
@@ -38,7 +60,7 @@ function eat() {
         actualTextLength = 0,
         shortened = "";
     if (arenaVal !== 0) {
-        percent = arenaVal / stringNumValue(hidden);
+        percent = compareStrings(arena.value, hidden)/hidden.length; // arenaVal / stringNumValue(hidden);
         resultDiv.innerHTML = Math.round((percent * 100));
         percentSymbol.innerHTML = "%";
     } else {
@@ -51,7 +73,7 @@ function eat() {
     sourceTextDiv.innerHTML = shortened;
 }
 
-function initialize() {
+function initializeGame() {
     "use strict";
     arena = document.getElementById("arena");
     sourceTextDiv = document.getElementById("sourceText");

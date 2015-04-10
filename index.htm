@@ -6,35 +6,54 @@
     <title>Personal blog</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="gameScript.js" defer></script>
+    <script>
+        var nav;
+        function init() {
+            nav = document.getElementById("nav");
+            initializeGame();
+            for(var i=0;i<nav.children.length;i++){
+                nav.children[i].addEventListener("click", RefreshMenu)
+            }
+        }
+        
+        function RefreshMenu(){
+            for(var i=0;i<nav.children.length;i++){
+                nav.children[i].classList.remove("selected");
+            }
+            this.classList.add("selected");
+        }
+    </script>
+    
 </head>
 
-<body>
+<body onload="init()">
+    <a name="main"></a>
     <div class="page-wrap">
         <header id="header" class="invert center-text full-row">
-            <nav class="container">
-                <a class="padded selected">Main</a>
-                <a href="game.htm" class="padded">
-                Game <span class="new">New!</span>
+            <nav id="nav" class="container">
+                <a class="padded selected" href="#main">Main</a>
+                <a href="#game" class="padded">
+                Game 
+<!--                <span class="new">New!</span>-->
                 </a>
-                <a href="contact.htm" class="padded">Contact</a>
+                <a href="#contact" class="padded">Contact</a>
             </nav>
         </header>
-        <div id="arrows">
-            <a id="left" href="contact.htm"> { </a>
-            <a id="right" href="game.htm"> } </a>
-        </div>
         <section class="container" id="content">
+
             <article>
                 <header>
                     <h2>
-           Lorem ipsum
-           </h2>
+                       Lorem ipsum
+                    </h2>
                 </header>
                 <footer>
                     <abbr class="pubDate">
                        11:33 15/03/2015
                     </abbr>
                 </footer>
+
                 <div class="padded text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia id sit voluptatum, quasi. Eligendi quae rem aut, alias accusantium maiores officia tempore corporis neque minima voluptatem, sed iusto ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia id sit voluptatum, quasi. Eligendi quae rem aut, alias accusantium maiores officia tempore corporis neque minima voluptatem, sed iusto ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia id sit voluptatum, quasi. Eligendi quae rem aut, alias accusantium maiores officia tempore corporis neque minima voluptatem, sed iusto ipsum.
                     <div class="separator"></div>
@@ -45,9 +64,7 @@
                 <div class="padded text">Dolore repellat vel optio laborum vitae quis ipsum voluptate, corporis exercitationem quidem, dolorem? Non dolores eveniet quia quae tenetur consequuntur atque facilis, inventore ipsum sequi aliquid minima pariatur, quibusdam corporis?
                     <div class="separator"></div>
                 </div>
-                <div class="padded text">Dolore repellat vel optio laborum vitae quis ipsum voluptate, corporis exercitationem quidem, dolorem? Non dolores eveniet quia quae tenetur consequuntur atque facilis, inventore ipsum sequi aliquid minima pariatur, quibusdam corporis?
-                    <div class="separator"></div>
-                </div>
+
                 <div class="padded text">Dolore repellat vel optio laborum vitae quis ipsum voluptate, corporis exercitationem quidem, dolorem? Non dolores eveniet quia quae tenetur consequuntur atque facilis, inventore ipsum sequi aliquid minima pariatur, quibusdam corporis?
                     <div class="separator"></div>
                 </div>
@@ -55,6 +72,64 @@
                 <div class="padded text">Dolore repellat vel optio laborum vitae quis ipsum voluptate, corporis exercitationem quidem, dolorem? Non dolores eveniet quia quae tenetur consequuntur atque facilis, inventore ipsum sequi aliquid minima pariatur, quibusdam corporis?
                     <div class="separator"></div>
                 </div>
+<a name="game"></a>
+                <div class="padded text">Dolore repellat vel optio laborum vitae quis ipsum voluptate, corporis exercitationem quidem, dolorem? Non dolores eveniet quia quae tenetur consequuntur atque facilis, inventore ipsum sequi aliquid minima pariatur, quibusdam corporis?
+                    <div class="separator"></div>
+                </div>
+            </article>
+        </section>
+        
+        <section class="container">
+
+            <article>
+                <header>
+                    <h2>
+                       Let's play a game!
+                   </h2>
+                </header>
+                <footer>
+                    <abbr class="pubDate">
+                       5:12 25/03/2015
+                    </abbr>
+                </footer>
+                <div class="center-text">
+                    Try to retype whole 'Lorem ipsum' text! Letter will begin to hide 2 seconds after you focus on textarea below quote!
+                </div>
+                <div class="quote" id="sourceText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est.
+                </div>
+                <h4 class="center-text">Your result:</h4>
+                <h3 class="center-text">
+                    <span id='result'>0</span>
+                    <span id="percentSymbol">%</span>
+                </h3>
+                <textarea id='arena' placeholder="Type here..."></textarea>
+
+                <div class="separator"></div>
+
+            </article>
+        </section>
+        <section class="container" id="contact">
+
+            <article>
+                <header>
+                    <h2>
+                       Contact
+                   </h2>
+                </header>
+                <footer>
+                    <abbr class="pubDate">
+                       5:18 25/03/2015
+                    </abbr>
+                </footer>
+                <div class="center-text center">
+                    Ignacy Wilczyński, ignacy130@gmail.com
+                </div>
+                <div class="center-text center">
+                    161224, 3 rok, informatyka
+                </div>
+                <div class="filler"></div>
+                <div class="separator"></div>
+                <a name="contact"></a>
             </article>
         </section>
     </div>
