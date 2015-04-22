@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="gameScript.js" defer></script>
+    <script src="fbLogin.js" defer></script>
     <script>
         var nav;
         function init() {
@@ -38,6 +39,11 @@
 <!--                <span class="new">New!</span>-->
                 </a>
                 <a href="#contact" class="padded">Contact</a>
+                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+<div id="status">
+</div>
             </nav>
         </header>
         <section class="container" id="content">
@@ -135,6 +141,7 @@
     </div>
     <footer id="footer" class="invert full-row">
         <div class="container text center-text"> Ignacy Wilczyński 2015</div>
+        <div class="text center-text"><a class="text" href=privacy-policy.htm>Polityka prywatności</a></div>
     </footer>
 </body>
 
