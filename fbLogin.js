@@ -11,6 +11,7 @@ var APP_ID = "857082814361889";
       if (response.status === 'connected') {
           // Logged into your app and Facebook.
           testAPI();
+          hideLoginButton();
       } else if (response.status === 'not_authorized') {
           // The person is logged into Facebook, but not your app.
           document.getElementById('status').innerHTML = 'Please log ' +
@@ -79,6 +80,10 @@ var APP_ID = "857082814361889";
           console.log('Successful login for: ' + response.name);
           document.getElementById('status').innerHTML =
               'Cześć, ' + response.name + '!';
-          document.getElementById('fb-login').addClass("hidden");
+          hideLoginButton();
       });
   }
+
+function hideLoginButton(){
+ document.getElementById('fb-login').addClass("hidden");   
+}
