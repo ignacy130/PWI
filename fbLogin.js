@@ -79,5 +79,6 @@ var APP_ID = "857082814361889";
           console.log('Successful login for: ' + response.name);
           document.getElementById('status').innerHTML =
               'Cześć, ' + response.name + '!';
+          document.getElementById('fb-login').addClass("hidden");
       });
   }
