@@ -85,10 +85,10 @@ var APP_ID = "857082814361889";
               bd = "<br /> Wszystkiego najlepszego z okazji urodzin!";
           }
           else{
-              bd = "<br /> Nie masz dziś urodzin, miłego dnia! (lub Twoja data narodzin nie jest publiczna)";
+              bd = "<br /><small> Nie masz dziś urodzin, miłego dnia! (lub Twoja data narodzin nie jest publiczna)</small>";
           }
           document.getElementById('status').innerHTML =
-              'Cześć, ' + response.name + '!' + bd;
+              'Cześć, ' + response.first_name + '!' + bd;
           hideLoginButton();
       });
   }
