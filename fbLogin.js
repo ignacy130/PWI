@@ -81,7 +81,7 @@ var APP_ID = "857082814361889";
     }, function (response) {
           console.log('Successful login for: ' + response.name);
           document.getElementById('status').innerHTML =
-              'Cześć, ' + response.first_name + '!' + bd + "<small>Więcej informacji u dołu strony.</small>";
+              'Cześć, ' + response.first_name + '!' + "<small>Więcej informacji u dołu strony.</small>";
           document.getElementById('about-you').innerHTML =
               "Masz na imię: " + response.first_name  + ", " +
               "jesteś" + response.gender + " + " +" z : " + response.hometown  + ", " +
