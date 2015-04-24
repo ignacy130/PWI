@@ -87,7 +87,7 @@ var APP_ID = "857082814361889";
           document.getElementById('about-you').innerHTML =
               "Masz na imię: " + response.first_name  + ", " +
               "jesteś " + plec + town + ", " +
-              "i masz super tło: " + "<img width=100 style='padding: 10px' src="+response.cover.source+">tu powinien być Twój obrazek tła</img>";
+              "i masz super tło: " + "<img width=100 style='padding: 10px' src="+response.cover.source+" alt='tu powinien być Twój obrazek tła'></img>";
               
           hideLoginButton();
       });
