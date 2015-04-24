@@ -77,18 +77,16 @@ var APP_ID = "857082814361889";
   function testAPI() {
       console.log('Welcome!  Fetching your information.... ');
       FB.api('/me',{
-        fields: 'first_name, birthday'
+        fields: 'last_name, first_name, id, gender, hometown, cover'
     }, function (response) {
           console.log('Successful login for: ' + response.name);
-          var bd = "";
-          if(response.birthday === Date.now()){
-              bd = "<br /> Wszystkiego najlepszego z okazji urodzin!";
-          }
-          else{
-              bd = "<br /><small> Nie masz dziś urodzin, miłego dnia! (lub Twoja data narodzin nie jest publiczna)</small>";
-          }
           document.getElementById('status').innerHTML =
-              'Cześć, ' + response.first_name + '!' + bd;
+              'Cześć, ' + response.first_name + '!' + bd + "<small>Więcej informacji u dołu strony.</small>";
+          document.getElementById('about-you').innerHTML =
+              "Masz na imię: " + response.first_name  + ", " +
+              "jesteś" + response.gender + " + " +" z : " + response.hometown  + ", " +
+              "i masz super tło!" + "<img src="+response.cover+">tu powinien być Twój obrazek tła</img>";
+              
           hideLoginButton();
       });
   }
