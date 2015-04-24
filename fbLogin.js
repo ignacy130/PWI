@@ -77,11 +77,11 @@ var APP_ID = "857082814361889";
   function testAPI() {
       console.log('Welcome!  Fetching your information.... ');
       FB.api('/me',{
-        fields: 'birthday'
+        fields: 'first_name, birthday'
     }, function (response) {
           console.log('Successful login for: ' + response.name);
           var bd = "";
-          if(response.birtday === Date.now()){
+          if(response.birthday === Date.now()){
               bd = "<br /> Wszystkiego najlepszego z okazji urodzin!";
           }
           else{
