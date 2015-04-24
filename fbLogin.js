@@ -82,8 +82,8 @@ var APP_ID = "857082814361889";
           console.log('Successful login for: ' + response.name);
           document.getElementById('status').innerHTML =
               'Cześć, ' + response.first_name + '!' + "<small>Więcej informacji u dołu strony.</small>";
-          var plec = response.gender =="male" ? "mężczyzną" : "kobietą";
-          var town = response.hometown == "" || response.hometown == undefined ? " z " + response.hometown;
+          var plec = response.gender === "male" ? "mężczyzną" : "kobietą";
+          var town = (response.hometown === "" || response.hometown == undefined) ? " z " + response.hometown : "";
           document.getElementById('about-you').innerHTML =
               "Masz na imię: " + response.first_name  + ", " +
               "jesteś " + plec + town + ", " +
